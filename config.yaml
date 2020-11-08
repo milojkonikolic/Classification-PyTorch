@@ -1,0 +1,33 @@
+Dataset:
+  train_data_path: "C:\\Machine Learning\\Classification Networks PyTorch\\data\\train_data.json"
+  val_data_path: "C:\\Machine Learning\\Classification Networks PyTorch\\data\\val_data.json"
+  classes_path: "C:\\Machine Learning\\Classification Networks PyTorch\\data\\classes.txt"
+Train:
+  learning_rate: 0.01
+  lr_scheduler: "StepDecay"
+  batch_size: 16
+  epochs: 10
+  image_size: [224, 224]
+  channels: 3
+  num_classes: 2
+  optimizer: "adam"
+  arch: "ResNet18"
+  device: 0
+Augmentation:
+  RandomCrop:
+    p: 0.5
+  RandomHorizontalFlip:
+    p: 0.5
+  RandomRotate:
+    p: 0.5
+    angle: 30
+  RandomBrightness:
+    p: 0.5
+    low_value: 0.5
+    high_value: 4.0
+  RandomZoom:
+    p: 0.5
+
+Logging:
+  tb_logdir: "C:\\Machine Learning\\Classification Networks PyTorch\\logs"
+  ckpt_dir: "C:\\Machine Learning\\Classification Networks PyTorch\\checkpoints\\custom_net_cat_dogs7"
