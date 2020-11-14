@@ -1,7 +1,8 @@
 import os
 from shutil import rmtree
 import logging
-
+import numpy as np
+import cv2 as cv
 import torch
 from tensorboardX import SummaryWriter
 
@@ -95,6 +96,29 @@ def save_model(model, epoch, ckpt_dir, logger):
     logger.info(f"Model saved.")
 
 
+def load_model(model_path, arch, num_classes, input_shape, channels=3):
+    if arch == "CustomNet":
+        model = CustomNet(num_classes, channels)
+    elif arch.lower() == "resnet18":
+        model = ResNet18(num_classes, input_shape, channels)
+    elif arch.lower() == "customresnet":
+        model = CustomResNet(num_classes, channels)
+    elif arch.lower() == "resnet34":
+        model = ResNet34(num_classes, input_shape, channels)
+    elif arch.lower() == "resnet50":
+        model = ResNet50(num_classes, input_shape, channels)
+    elif arch.lower() == "resnet101":
+        model = ResNet101(num_classes, input_shape, channels)
+    else:
+        raise NotImplementedError(f"{arch} not implemented."
+                                  f"For supported architectures see documentation")
+
+    model.load_state_dict(torch.load(model_path))
+    model.eval()
+
+    return model
+
+
 def get_optimizer(opt, model, lr):
     """
     Args
@@ -113,3 +137,13 @@ def get_optimizer(opt, model, lr):
         raise NotImplementedError(f"Not supported optimizer name: {opt}."
                                   f"For supported optimizers see documentation")
     return optimizer
+
+
+def preprocess_img(img):
+    img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
+    img = cv.resize(img, (240, 160))
+    img = np.transpose(img, (2, 0, 1))
+    img = img[np.newaxis, ...]
+    img = img / 255.
+    img = torch.FloatTensor(img)
+    return img

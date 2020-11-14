@@ -5,13 +5,14 @@ Dataset:
   num_classes: 43
 Train:
   learning_rate: 0.001
-  lr_scheduler: "StepDecay"
+  lr_scheduler: "StepDecay"  # Not implemented
   batch_size: 2
   epochs: 20
   image_size: [240, 160]
   channels: 3
   optimizer: "adam"
   arch: "ResNet50"
+  pretrained: False  # Not implemented
   device: 0
 Augmentation:
   RandomCrop:  # Implement crop with the same size

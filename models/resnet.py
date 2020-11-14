@@ -141,74 +141,99 @@ class CustomResNet(nn.Module):
         return x
 
 
-class ResNet18(nn.Module):
+# class ResNet18(nn.Module):
+#
+#     def __init__(self, num_classes, input_shape, channels=3):
+#         super().__init__()
+#         self.conv1 = nn.Conv2d(channels, 64, 7, 2, padding=get_padd(7))
+#         self.bn1 = nn.BatchNorm2d(64)
+#         self.block2 = self.get_block(in_ch=[64, 64], strides=[1, 1], num_blocks=2)
+#         self.block3 = self.get_block(in_ch=[64, 128], strides=[2, 1], num_blocks=2)
+#         self.block4 = self.get_block(in_ch=[128, 256], strides=[2, 1], num_blocks=2)
+#         self.block5 = self.get_block(in_ch=[256, 512], strides=[2, 1], num_blocks=2)
+#         self.fc1 = nn.Linear(input_shape[0] // (2 ** 5) * input_shape[1] // (2 ** 5) * 512, num_classes)
+#
+#     # TO DO: Implement ResNet class with method get_block
+#     def get_block(self, in_ch, strides, num_blocks):
+#         in_channels = [in_ch] + [[in_ch[1]] * 2] * (num_blocks - 1)
+#         out_channels = [[in_ch[1]] * 2] * num_blocks
+#         strides = [strides] + [[strides[1]] * 2] * (num_blocks - 1)
+#         layers = []
+#         for in_channel, out_channel, stride in zip(in_channels, out_channels, strides):
+#             layer = ResBlock2(in_channels=in_channel, out_channels=out_channel, strides=stride)
+#             layers.append(layer)
+#         return nn.Sequential(*layers)
+#
+#     def forward(self, x):
+#         x = F.relu(self.bn1(self.conv1(x)))
+#         #x = F.max_pool2d(x, 3, 2)
+#         x = self.block2(x)
+#         x = self.block3(x)
+#         x = self.block4(x)
+#         x = self.block5(x)
+#         x = F.avg_pool2d(x, 2)
+#         x = x.view(x.size()[0], -1)
+#         x = F.log_softmax(self.fc1(x), dim=1)
+#         return x
+#
+#
+# class ResNet34(nn.Module):
+#     def __init__(self, num_classes, input_shape, channels=3):
+#         super().__init__()
+#         self.conv1 = nn.Conv2d(channels, 64, 7, 2, padding=get_padd(7))
+#         self.bn1 = nn.BatchNorm2d(64)
+#         self.block2 = self.get_block(in_ch=[64, 64], strides=[1, 1], num_blocks=3)
+#         self.block3 = self.get_block(in_ch=[64, 128], strides=[2, 1], num_blocks=4)
+#         self.block4 = self.get_block(in_ch=[128, 256], strides=[2, 1], num_blocks=6)
+#         self.block5 = self.get_block(in_ch=[256, 512], strides=[2, 1], num_blocks=3)
+#         self.fc1 = nn.Linear(input_shape[0] // (2 ** 5) * input_shape[1] // (2 ** 5) * 512, num_classes)
+#
+#     def get_block(self, in_ch, strides, num_blocks):
+#         in_channels = [in_ch] + [[in_ch[1]] * 2] * (num_blocks - 1)
+#         out_channels = [[in_ch[1]] * 2] * num_blocks
+#         strides = [strides] + [[strides[1]] * 2] * (num_blocks - 1)
+#         layers = []
+#         for in_channel, out_channel, stride in zip(in_channels, out_channels, strides):
+#             layer = ResBlock2(in_channels=in_channel, out_channels=out_channel, strides=stride)
+#             layers.append(layer)
+#         return nn.Sequential(*layers)
+#
+#     def forward(self, x):
+#         x = F.relu(self.bn1(self.conv1(x)))
+#         #x = F.max_pool2d(x, 3, 2)
+#         x = self.block2(x)
+#         x = self.block3(x)
+#         x = self.block4(x)
+#         x = self.block5(x)
+#         x = F.avg_pool2d(x, 2)
+#         x = x.view(x.size()[0], -1)
+#         x = F.log_softmax(self.fc1(x), dim=1)
+#         return x
+
+class ResNet18(ResNet):
 
     def __init__(self, num_classes, input_shape, channels=3):
         super().__init__()
         self.conv1 = nn.Conv2d(channels, 64, 7, 2, padding=get_padd(7))
         self.bn1 = nn.BatchNorm2d(64)
-        self.block2 = self.get_block(in_ch=[64, 64], strides=[1, 1], num_blocks=2)
-        self.block3 = self.get_block(in_ch=[64, 128], strides=[2, 1], num_blocks=2)
-        self.block4 = self.get_block(in_ch=[128, 256], strides=[2, 1], num_blocks=2)
-        self.block5 = self.get_block(in_ch=[256, 512], strides=[2, 1], num_blocks=2)
+        self.block2 = self.get_block(in_channel=64, out_channels=[64, 64], stride=1, num_blocks=2)
+        self.block3 = self.get_block(in_channel=64, out_channels=[128, 128], stride=2, num_blocks=2)
+        self.block4 = self.get_block(in_channel=128, out_channels=[256, 256], stride=2, num_blocks=2)
+        self.block5 = self.get_block(in_channel=256, out_channels=[512, 512], stride=2, num_blocks=2)
         self.fc1 = nn.Linear(input_shape[0] // (2 ** 5) * input_shape[1] // (2 ** 5) * 512, num_classes)
 
-    # TO DO: Implement ResNet class with method get_block
-    def get_block(self, in_ch, strides, num_blocks):
-        in_channels = [in_ch] + [[in_ch[1]] * 2] * (num_blocks - 1)
-        out_channels = [[in_ch[1]] * 2] * num_blocks
-        strides = [strides] + [[strides[1]] * 2] * (num_blocks - 1)
-        layers = []
-        for in_channel, out_channel, stride in zip(in_channels, out_channels, strides):
-            layer = ResBlock2(in_channels=in_channel, out_channels=out_channel, strides=stride)
-            layers.append(layer)
-        return nn.Sequential(*layers)
 
-    def forward(self, x):
-        x = F.relu(self.bn1(self.conv1(x)))
-        #x = F.max_pool2d(x, 3, 2)
-        x = self.block2(x)
-        x = self.block3(x)
-        x = self.block4(x)
-        x = self.block5(x)
-        x = F.avg_pool2d(x, 2)
-        x = x.view(x.size()[0], -1)
-        x = F.log_softmax(self.fc1(x), dim=1)
-        return x
+class ResNet34(ResNet):
 
-
-class ResNet34(nn.Module):
     def __init__(self, num_classes, input_shape, channels=3):
         super().__init__()
         self.conv1 = nn.Conv2d(channels, 64, 7, 2, padding=get_padd(7))
         self.bn1 = nn.BatchNorm2d(64)
-        self.block2 = self.get_block(in_ch=[64, 64], strides=[1, 1], num_blocks=3)
-        self.block3 = self.get_block(in_ch=[64, 128], strides=[2, 1], num_blocks=4)
-        self.block4 = self.get_block(in_ch=[128, 256], strides=[2, 1], num_blocks=6)
-        self.block5 = self.get_block(in_ch=[256, 512], strides=[2, 1], num_blocks=3)
+        self.block2 = self.get_block(in_channel=64, out_channels=[64, 64], stride=1, num_blocks=3)
+        self.block3 = self.get_block(in_channel=64, out_channels=[128, 128], stride=2, num_blocks=4)
+        self.block4 = self.get_block(in_channel=128, out_channels=[256, 256], stride=2, num_blocks=6)
+        self.block5 = self.get_block(in_channel=256, out_channels=[512, 512], stride=2, num_blocks=4)
         self.fc1 = nn.Linear(input_shape[0] // (2 ** 5) * input_shape[1] // (2 ** 5) * 512, num_classes)
-
-    def get_block(self, in_ch, strides, num_blocks):
-        in_channels = [in_ch] + [[in_ch[1]] * 2] * (num_blocks - 1)
-        out_channels = [[in_ch[1]] * 2] * num_blocks
-        strides = [strides] + [[strides[1]] * 2] * (num_blocks - 1)
-        layers = []
-        for in_channel, out_channel, stride in zip(in_channels, out_channels, strides):
-            layer = ResBlock2(in_channels=in_channel, out_channels=out_channel, strides=stride)
-            layers.append(layer)
-        return nn.Sequential(*layers)
-
-    def forward(self, x):
-        x = F.relu(self.bn1(self.conv1(x)))
-        #x = F.max_pool2d(x, 3, 2)
-        x = self.block2(x)
-        x = self.block3(x)
-        x = self.block4(x)
-        x = self.block5(x)
-        x = F.avg_pool2d(x, 2)
-        x = x.view(x.size()[0], -1)
-        x = F.log_softmax(self.fc1(x), dim=1)
-        return x
 
 
 class ResNet50(ResNet):
@@ -216,10 +241,10 @@ class ResNet50(ResNet):
         super().__init__()
         self.conv1 = nn.Conv2d(channels, 64, 7, 2, padding=get_padd(7))
         self.bn1 = nn.BatchNorm2d(64)
-        self.block2 = self.get_block(in_channel=64, out_channels=[64, 64, 256], stride=1, num_blocks=3)
-        self.block3 = self.get_block(in_channel=256, out_channels=[128, 128, 512], stride=2, num_blocks=4)
-        self.block4 = self.get_block(in_channel=512, out_channels=[256, 256, 1024], stride=2, num_blocks=6)
-        self.block5 = self.get_block(in_channel=1024, out_channels=[512, 512, 2048], stride=2, num_blocks=3)
+        self.block2 = self.get_block(in_channel=64, out_channels=[64, 64], stride=1, num_blocks=3)
+        self.block3 = self.get_block(in_channel=64, out_channels=[128, 128], stride=2, num_blocks=4)
+        self.block4 = self.get_block(in_channel=128, out_channels=[256, 256], stride=2, num_blocks=6)
+        self.block5 = self.get_block(in_channel=256, out_channels=[512, 512], stride=2, num_blocks=3)
         self.fc1 = nn.Linear(input_shape[0] // (2 ** 5) * input_shape[1] // (2 ** 5) * 2048, num_classes)
 
 
