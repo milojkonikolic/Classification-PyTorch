@@ -3,6 +3,7 @@ import json
 import argparse
 import yaml
 import cv2 as cv
+import torch
 
 from utils.utils import load_model, preprocess_img
 
@@ -15,8 +16,9 @@ def evaluate(model, data):
         img = cv.imread(img_path)
         img = preprocess_img(img)
         pred = model(img)
+        predicted = torch.max(pred.data, 1)[1]
         print(f"label: {label}")
-        print(f"pred: {pred}\n")
+        print(f"pred: {predicted}\n")
 
 
 if __name__ == "__main__":
