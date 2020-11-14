@@ -6,7 +6,7 @@ import torch
 from tensorboardX import SummaryWriter
 
 from models.CustomNet import CustomNet
-from models.resnet import ResNet18
+from models.resnet import CustomResNet, ResNet18, ResNet34
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -50,7 +50,7 @@ def get_device(device):
         return torch.device("cuda:0")
 
 
-def get_model(arch, num_classes, channels=3):
+def get_model(arch, num_classes, input_shape, channels=3):
     """
     Args:
         arch: string, Network architecture
@@ -62,12 +62,31 @@ def get_model(arch, num_classes, channels=3):
     if arch == "CustomNet":
         model = CustomNet(num_classes, channels)
     elif arch.lower() == "resnet18":
-        model = ResNet18(num_classes, channels)
+        model = ResNet18(num_classes, input_shape, channels)
+    elif arch.lower() == "customresnet":
+        model = CustomResNet(num_classes, channels)
+    elif arch.lower() == "resnet34":
+        model = ResNet34(num_classes, input_shape, channels)
     else:
         raise NotImplementedError(f"{arch} not implemented."
                                   f"For supported architectures see documentation")
 
     return model
+
+
+def save_model(model, epoch, ckpt_dir, logger):
+    """ Save model
+    Args:
+        model: Model for saving
+        epoch: Number of epoch
+        ckpt_dir: Store directory
+        logger:
+    """
+    if not os.path.isdir(ckpt_dir):
+        os.makedirs(ckpt_dir)
+    ckpt_path = os.path.join(ckpt_dir, "model_epoch" + str(epoch) + ".pt")
+    torch.save(model.state_dict(), ckpt_path)
+    logger.info(f"Model saved.")
 
 
 def get_optimizer(opt, model, lr):
@@ -88,12 +107,3 @@ def get_optimizer(opt, model, lr):
         raise NotImplementedError(f"Not supported optimizer name: {opt}."
                                   f"For supported optimizers see documentation")
     return optimizer
-
-
-def save_model(model, ckpt_path):
-    """ Save model
-    Args:
-        model: Model for saving
-        ckpt_path: Path to saved model
-    """
-    torch.save(model.state_dict, ckpt_path)

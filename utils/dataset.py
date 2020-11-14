@@ -79,7 +79,7 @@ class RandomZoom(object):
 
 class DatasetBuilder(Dataset):
 
-    def __init__(self, data_path, classes_path, img_size, augment, logger):
+    def __init__(self, data_path, classes_path, img_size, logger, augment=None):
         self.data_path = data_path
         self.labels = self.load_labels(logger)
         self.img_size = tuple(img_size)
@@ -94,10 +94,12 @@ class DatasetBuilder(Dataset):
         img_path = label["img_path"]
         class_id = label["label"]
         img = self.read_img(img_path)
+        #print("img: ", img)
+        #print("img.shape1: ", img.shape)
         if self.augment:
-            img = self.augment_img(img, self.augment)
+            img = self.augment_img(img)
         img = self.preprocess_img(img, img_path)
-
+        #print("img.shape2: ", img.shape)
         return (img, class_id)
 
     def get_classes(self, classes_path):
@@ -117,19 +119,19 @@ class DatasetBuilder(Dataset):
             img = cv.cvtColor(img, cv.COLOR_RGB2BGR)
         except:
             img = 0
-            print(f"Cannot rad image : {img_path}")
+            print(f"Cannot read image : {img_path}")
+            exit(1)
         return img
 
-    @staticmethod
-    def augment_img(img, augment):
+    def augment_img(self, img):
         try:
-            img = RandomCrop(p=augment["RandomCrop"]["p"])(img)
-            img = RandomHorizontalFlip(p=augment["RandomHorizontalFlip"]["p"])(img)
-            img = RandomRotate(p=augment["RandomRotate"]["p"],
-                               angle=augment["RandomRotate"]["angle"])(img)
-            img = RandomBrightness(p=augment["RandomBrightness"]["p"],
-                                   low_value=augment["RandomBrightness"]["low_value"],
-                                   high_value=augment["RandomBrightness"]["high_value"])(img)
+            img = RandomCrop(p=self.augment["RandomCrop"]["p"])(img)
+            img = RandomHorizontalFlip(p=self.augment["RandomHorizontalFlip"]["p"])(img)
+            img = RandomRotate(p=self.augment["RandomRotate"]["p"],
+                               angle=self.augment["RandomRotate"]["angle"])(img)
+            img = RandomBrightness(p=self.augment["RandomBrightness"]["p"],
+                                   low_value=self.augment["RandomBrightness"]["low_value"],
+                                   high_value=self.augment["RandomBrightness"]["high_value"])(img)
         except:
             img = 0
 
@@ -162,9 +164,9 @@ def create_dataloaders(train_data_path, val_data_path, classes_path, img_size, b
     """
 
     logger.info("Reading train data...")
-    train_data = DatasetBuilder(train_data_path, classes_path, img_size, augment, logger)
+    train_data = DatasetBuilder(train_data_path, classes_path, img_size, logger, augment)
     logger.info("Reading val data...")
-    val_data = DatasetBuilder(val_data_path, classes_path, img_size, {}, logger)
+    val_data = DatasetBuilder(val_data_path, classes_path, img_size, logger)
 
     train_loader = DataLoader(dataset=train_data, pin_memory=True,
                               batch_size=batch_size,

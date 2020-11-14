@@ -1,33 +1,33 @@
 Dataset:
-  train_data_path: "C:\\Machine Learning\\Classification Networks PyTorch\\data\\train_data.json"
-  val_data_path: "C:\\Machine Learning\\Classification Networks PyTorch\\data\\val_data.json"
-  classes_path: "C:\\Machine Learning\\Classification Networks PyTorch\\data\\classes.txt"
+  train_data_path: "C://Machine Learning//Datasets//TrafficSigns//train_data.json"
+  val_data_path: "C://Machine Learning//Datasets//TrafficSigns//val_data.json"
+  classes_path: "C://Machine Learning//Datasets//TrafficSigns//classes.txt"
+  num_classes: 43
 Train:
-  learning_rate: 0.01
+  learning_rate: 0.001
   lr_scheduler: "StepDecay"
-  batch_size: 16
-  epochs: 10
-  image_size: [224, 224]
+  batch_size: 4
+  epochs: 20
+  image_size: [240, 160]
   channels: 3
-  num_classes: 2
   optimizer: "adam"
-  arch: "ResNet18"
+  arch: "ResNet34"
   device: 0
 Augmentation:
-  RandomCrop:
-    p: 0.5
+  RandomCrop:  # Implement crop with the same size
+    p: 0.0
   RandomHorizontalFlip:
-    p: 0.5
+    p: 0.25
   RandomRotate:
-    p: 0.5
+    p: 0.25
     angle: 30
   RandomBrightness:
-    p: 0.5
+    p: 0.2
     low_value: 0.5
     high_value: 4.0
-  RandomZoom:
-    p: 0.5
+  RandomZoom:  # Not implemented
+    p: 0.0
 
 Logging:
-  tb_logdir: "C:\\Machine Learning\\Classification Networks PyTorch\\logs"
-  ckpt_dir: "C:\\Machine Learning\\Classification Networks PyTorch\\checkpoints\\custom_net_cat_dogs7"
+  tb_logdir: "C:\\Machine Learning\\Classification Networks PyTorch\\logs\\TrafficSigns"
+  ckpt_dir: "C:\\Machine Learning\\Classification Networks PyTorch\\checkpoints\\TrafficSigns\\ResNet34_1"

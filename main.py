@@ -2,12 +2,14 @@ import argparse
 import yaml
 import torch
 import torch.nn as nn
+import numpy as np
+import cv2 as cv
 
-from utils.utils import get_model, get_optimizer, get_logger, get_tb_writer, get_device
+from utils.utils import get_model, get_optimizer, get_logger, get_tb_writer, get_device, save_model
 from utils.dataset import create_dataloaders
 
-
 logger = get_logger()
+
 
 def train(config):
 
@@ -22,8 +24,11 @@ def train(config):
                                                            augment=config["Augmentation"],
                                                            logger=logger)
     device = get_device(config["Train"]["device"])
-    model = get_model(config["Train"]["arch"], config["Train"]["num_classes"],
-                      config["Train"]["channels"]).cuda(device=device)
+    model = get_model(arch=config["Train"]["arch"],
+                      num_classes=config["Dataset"]["num_classes"],
+                      input_shape=config["Train"]["image_size"],
+                      channels=config["Train"]["channels"]
+                      ).cuda(device=device)
 
     optimizer = get_optimizer(opt=config["Train"]["optimizer"], model=model,
                               lr=config["Train"]["learning_rate"])
@@ -36,11 +41,12 @@ def train(config):
     logger.info(f"Number of parameters: {total_num_params}")
 
     global_step = 0
-    logger.info(f"---------------- Training started ----------------")
+    logger.info(f"---------------- Training Started ----------------")
     for epoch in range(config["Train"]["epochs"]):
         epoch += 1
         for batch, (X_train, y_train) in enumerate(train_loader):
             batch += 1
+
             X_train = X_train.cuda()
             y_train = y_train.cuda()
             y_pred = model(X_train)
@@ -53,9 +59,9 @@ def train(config):
             optimizer.zero_grad()
             train_loss.backward()
             optimizer.step()
-            if batch % 200 == 0:
+            if batch % 100 == 0:
                 logger.info(f"epoch: {epoch}/{config['Train']['epochs']}, batch: {batch}/{len(train_loader)}"
-                            f" , train_loss: {train_loss.item()}")
+                            f", train_loss: {train_loss.item()}")
 
         val_corr = 0
         with torch.no_grad():
@@ -75,7 +81,9 @@ def train(config):
             logger.info(f"val_accuracy: {acc}%")
             writer.add_scalar("val_accuracy", acc, epoch)
 
-    logger.info(f"---------------- Training finished ----------------")
+            save_model(model, epoch, config["Logging"]["ckpt_dir"], logger)
+
+    logger.info(f"---------------- Training Finished ----------------")
 
 
 if __name__ == "__main__":
