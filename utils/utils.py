@@ -97,21 +97,8 @@ def save_model(model, epoch, ckpt_dir, logger):
 
 
 def load_model(model_path, arch, num_classes, input_shape, channels=3):
-    if arch == "CustomNet":
-        model = CustomNet(num_classes, channels)
-    elif arch.lower() == "resnet18":
-        model = ResNet18(num_classes, input_shape, channels)
-    elif arch.lower() == "customresnet":
-        model = CustomResNet(num_classes, channels)
-    elif arch.lower() == "resnet34":
-        model = ResNet34(num_classes, input_shape, channels)
-    elif arch.lower() == "resnet50":
-        model = ResNet50(num_classes, input_shape, channels)
-    elif arch.lower() == "resnet101":
-        model = ResNet101(num_classes, input_shape, channels)
-    else:
-        raise NotImplementedError(f"{arch} not implemented."
-                                  f"For supported architectures see documentation")
+
+    model = get_model(arch, num_classes, input_shape, channels)
 
     model.load_state_dict(torch.load(model_path))
     model.eval()
