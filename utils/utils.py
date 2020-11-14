@@ -6,7 +6,7 @@ import torch
 from tensorboardX import SummaryWriter
 
 from models.CustomNet import CustomNet
-from models.resnet import CustomResNet, ResNet18, ResNet34
+from models.resnet import CustomResNet, ResNet18, ResNet34, ResNet50, ResNet101
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -67,6 +67,12 @@ def get_model(arch, num_classes, input_shape, channels=3):
         model = CustomResNet(num_classes, channels)
     elif arch.lower() == "resnet34":
         model = ResNet34(num_classes, input_shape, channels)
+    elif arch.lower() == "resnet50":
+        model = ResNet50(num_classes, input_shape, channels)
+    elif arch.lower() == "resnet101":
+        model = ResNet101(num_classes, input_shape, channels)
+    # elif arch.lower() == "resnet152":
+    #     model = ResNet152(num_classes, input_shape, channels)
     else:
         raise NotImplementedError(f"{arch} not implemented."
                                   f"For supported architectures see documentation")

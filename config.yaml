@@ -6,12 +6,12 @@ Dataset:
 Train:
   learning_rate: 0.001
   lr_scheduler: "StepDecay"
-  batch_size: 4
+  batch_size: 2
   epochs: 20
   image_size: [240, 160]
   channels: 3
   optimizer: "adam"
-  arch: "ResNet34"
+  arch: "ResNet50"
   device: 0
 Augmentation:
   RandomCrop:  # Implement crop with the same size
@@ -30,4 +30,4 @@ Augmentation:
 
 Logging:
   tb_logdir: "C:\\Machine Learning\\Classification Networks PyTorch\\logs\\TrafficSigns"
-  ckpt_dir: "C:\\Machine Learning\\Classification Networks PyTorch\\checkpoints\\TrafficSigns\\ResNet34_1"
+  ckpt_dir: "C:\\Machine Learning\\Classification Networks PyTorch\\checkpoints\\TrafficSigns\\ResNet50_1"
