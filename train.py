@@ -1,12 +1,10 @@
 import os
-import glob
 import argparse
-from shutil import copyfile
 import yaml
+import numpy as np
 import torch
 import torch.nn as nn
 
-from utils.dataset import create_dataloaders
 from utils.utils import get_device, get_logger, get_tb_writer, copy_config
 from utils.lr_schedulers import StepDecayLR
 from utils.dataset import create_dataloaders
@@ -123,7 +121,8 @@ class Train():
         self.logger.info(f"Number of parameters: {total_num_params}")
 
         global_step = 0
-        eval_step = len(self.train_loader) // self.eval_per_epoch
+        eval_steps = list(np.linspace(len(self.train_loader) // self.eval_per_epoch, len(self.train_loader),
+                                      self.eval_per_epoch))
         log_step = len(self.train_loader) // 20
         results = []
 
@@ -155,7 +154,7 @@ class Train():
                                      f"batch: {batch}/{len(self.train_loader)}, "
                                      f"train_loss: {train_loss.item()}")
 
-                if batch % eval_step == 0:
+                if batch in eval_steps:
                     val_corr = 0
                     with torch.no_grad():
                         for val_batch, (X_val, y_val) in enumerate(self.val_loader):
@@ -170,7 +169,7 @@ class Train():
                         self.logger.info(f"Val loss: {val_loss.item()}")
                         self.writer.add_scalar("val_loss", val_loss.item(), global_step)
                         acc = int(float(val_corr) / (float(self.batch_size) * float(len(self.val_loader))) * 100.)
-                        self.logger.info(f"val_accuracy: {acc}%")
+                        self.logger.info(f"batch: {batch}/{len(self.train_loader)}\n val_accuracy: {acc}%")
                         self.writer.add_scalar("val_accuracy", acc, epoch)
                         results.append({"epoch": epoch, "val_accuracy": acc})
                         self.save_model(global_step)
