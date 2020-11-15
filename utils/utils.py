@@ -148,6 +148,9 @@ def preprocess_img(img):
 
 
 def copy_config(config):
-    out_config_path = os.path.join(config["Train"]["ckpt_dir"], "config.yaml")
+    ckpt_dir = config["Logging"]["ckpt_dir"]
+    if not os.path.isdir(ckpt_dir):
+        os.makedirs(ckpt_dir)
+    out_config_path = os.path.join(ckpt_dir, "config.yaml")
     with open(out_config_path, 'w') as outfile:
         yaml.dump(config, outfile)

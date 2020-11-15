@@ -21,7 +21,7 @@ class Train():
         self.epochs = config["Train"]["epochs"]
         self.input_shape = config["Train"]["image_size"]
         self.channels = config["Train"]["channels"]
-        self.ckpt_dir = config["Train"]["ckpt_dir"]
+        self.ckpt_dir = config["Logging"]["ckpt_dir"]
         self.device = get_device(config["Train"]["device"])
         self.model = self.load_model(config["Train"]["arch"], config["Train"]["pretrained"])
         self.optimizer = self.get_optimizer(config["Train"]["optimizer"], config["Train"]["lr_init"])

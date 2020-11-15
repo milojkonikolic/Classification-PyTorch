@@ -12,7 +12,7 @@ Train:
   image_size: [240, 160]
   channels: 3
   optimizer: "adam"
-  arch: "ResNet152"
+  arch: "ResNet18"
   pretrained: ""
   device: 0
 Augmentation:
@@ -30,4 +30,4 @@ Augmentation:
 
 Logging:
   tb_logdir: "C:\\Machine Learning\\Classification Networks PyTorch\\logs\\TrafficSigns"
-  ckpt_dir: "C:\\Machine Learning\\Classification Networks PyTorch\\checkpoints\\TrafficSigns\\ResNet50_1"
+  ckpt_dir: "C:\\Machine Learning\\Classification Networks PyTorch\\checkpoints\\TrafficSigns\\ResNet18_2"
