@@ -2,10 +2,9 @@ import argparse
 import yaml
 import torch
 import torch.nn as nn
-import numpy as np
-import cv2 as cv
 
-from utils.utils import get_model, get_optimizer, get_logger, get_tb_writer, get_device, save_model
+from utils.utils import get_model, get_optimizer, get_logger, get_tb_writer, get_device, save_model, load_model, \
+                        copy_config
 from utils.dataset import create_dataloaders
 
 logger = get_logger()
@@ -24,11 +23,19 @@ def train(config):
                                                            augment=config["Augmentation"],
                                                            logger=logger)
     device = get_device(config["Train"]["device"])
-    model = get_model(arch=config["Train"]["arch"],
-                      num_classes=config["Dataset"]["num_classes"],
-                      input_shape=config["Train"]["image_size"],
-                      channels=config["Train"]["channels"]
-                      ).cuda(device=device)
+    if config["Train"]["pretrained"]:
+        model = load_model(model_path=config["Train"]["pretrained"],
+                           arch=config["Train"]["arch"],
+                           num_classes=config["Dataset"]["num_classes"],
+                           input_shape=config["Train"]["image_size"],
+                           channels=config["Train"]["channels"]
+                           ).cuda(device=device)
+    else:
+        model = get_model(arch=config["Train"]["arch"],
+                          num_classes=config["Dataset"]["num_classes"],
+                          input_shape=config["Train"]["image_size"],
+                          channels=config["Train"]["channels"]
+                          ).cuda(device=device)
 
     optimizer = get_optimizer(opt=config["Train"]["optimizer"], model=model,
                               lr=config["Train"]["learning_rate"])
@@ -40,8 +47,10 @@ def train(config):
         total_num_params += p
     logger.info(f"Number of parameters: {total_num_params}")
 
+    copy_config(config)
     global_step = 0
     logger.info(f"---------------- Training Started ----------------")
+    results = []
     for epoch in range(config["Train"]["epochs"]):
         epoch += 1
         for batch, (X_train, y_train) in enumerate(train_loader):
@@ -81,7 +90,8 @@ def train(config):
             logger.info(f"val_accuracy: {acc}%")
             writer.add_scalar("val_accuracy", acc, epoch)
 
-            save_model(model, epoch, config["Logging"]["ckpt_dir"], logger)
+            results.append({"epoch": epoch, "val_accuracy": acc})
+            save_model(model, epoch, config["Logging"]["ckpt_dir"], results, logger)
 
     logger.info(f"---------------- Training Finished ----------------")
 

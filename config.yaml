@@ -4,15 +4,16 @@ Dataset:
   classes_path: "C://Machine Learning//Datasets//TrafficSigns//classes.txt"
   num_classes: 43
 Train:
-  learning_rate: 0.001
+  lr_init: 0.001
+  lr_end: 0.0001
   lr_scheduler: "StepDecay"  # Not implemented
   batch_size: 2
   epochs: 20
   image_size: [240, 160]
   channels: 3
   optimizer: "adam"
-  arch: "ResNet50"
-  pretrained: False  # Not implemented
+  arch: "ResNet152"
+  pretrained: ""
   device: 0
 Augmentation:
   RandomCrop:  # Implement crop with the same size
@@ -26,8 +27,6 @@ Augmentation:
     p: 0.2
     low_value: 0.5
     high_value: 4.0
-  RandomZoom:  # Not implemented
-    p: 0.0
 
 Logging:
   tb_logdir: "C:\\Machine Learning\\Classification Networks PyTorch\\logs\\TrafficSigns"

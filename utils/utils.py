@@ -1,5 +1,6 @@
 import os
-from shutil import rmtree
+import yaml
+from shutil import rmtree, copyfile
 import logging
 import numpy as np
 import cv2 as cv
@@ -7,7 +8,7 @@ import torch
 from tensorboardX import SummaryWriter
 
 from models.CustomNet import CustomNet
-from models.resnet import CustomResNet, ResNet18, ResNet34, ResNet50, ResNet101
+from models.resnet import ResNet18, ResNet34, ResNet50, ResNet101, ResNet152
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -64,24 +65,21 @@ def get_model(arch, num_classes, input_shape, channels=3):
         model = CustomNet(num_classes, channels)
     elif arch.lower() == "resnet18":
         model = ResNet18(num_classes, input_shape, channels)
-    elif arch.lower() == "customresnet":
-        model = CustomResNet(num_classes, channels)
     elif arch.lower() == "resnet34":
         model = ResNet34(num_classes, input_shape, channels)
     elif arch.lower() == "resnet50":
         model = ResNet50(num_classes, input_shape, channels)
     elif arch.lower() == "resnet101":
         model = ResNet101(num_classes, input_shape, channels)
-    # elif arch.lower() == "resnet152":
-    #     model = ResNet152(num_classes, input_shape, channels)
+    elif arch.lower() == "resnet152":
+        model = ResNet152(num_classes, input_shape, channels)
     else:
         raise NotImplementedError(f"{arch} not implemented."
                                   f"For supported architectures see documentation")
-
     return model
 
 
-def save_model(model, epoch, ckpt_dir, logger):
+def save_model(model, epoch, ckpt_dir, results, logger):
     """ Save model
     Args:
         model: Model for saving
@@ -89,11 +87,24 @@ def save_model(model, epoch, ckpt_dir, logger):
         ckpt_dir: Store directory
         logger:
     """
+    best_acc = 0
+    best_epoch = 0
+    ckpt_dir = os.path.join(ckpt_dir, "checkpoints")
     if not os.path.isdir(ckpt_dir):
         os.makedirs(ckpt_dir)
     ckpt_path = os.path.join(ckpt_dir, "model_epoch" + str(epoch) + ".pt")
     torch.save(model.state_dict(), ckpt_path)
-    logger.info(f"Model saved.")
+    logger.info(f"Model saved: {ckpt_path}")
+
+    best_ckpt_path = os.path.join(ckpt_dir, "best_model_epoch" + str(epoch) + ".pt")
+    for res in results:
+        if res["val_accuracy"] > best_acc:
+            best_epoch = res["epoch"]
+    best_epoch = os.path.join(ckpt_dir, "model_epoch" + str(best_epoch) + ".pt")
+    if os.path.isfile(best_epoch):
+        copyfile(best_epoch, best_ckpt_path)
+    else:
+        logger.info(f"The best epoch not found: {best_epoch}")
 
 
 def load_model(model_path, arch, num_classes, input_shape, channels=3):
@@ -134,3 +145,9 @@ def preprocess_img(img):
     img = img / 255.
     img = torch.FloatTensor(img)
     return img
+
+
+def copy_config(config):
+    out_config_path = os.path.join(config["Train"]["ckpt_dir"], "config.yaml")
+    with open(out_config_path, 'w') as outfile:
+        yaml.dump(config, outfile)

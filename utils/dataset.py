@@ -73,10 +73,6 @@ class RandomBrightness(object):
         return img
 
 
-class RandomZoom(object):
-    pass
-
-
 class DatasetBuilder(Dataset):
 
     def __init__(self, data_path, classes_path, img_size, logger, augment=None):
@@ -101,11 +97,6 @@ class DatasetBuilder(Dataset):
         img = self.preprocess_img(img, img_path)
         #print("img.shape2: ", img.shape)
         return (img, class_id)
-
-    def get_classes(self, classes_path):
-        with open(classes_path, 'r') as f:
-            classes = f.read().split('\n')
-        return classes
 
     def load_labels(self, logger):
         with open(self.data_path, 'r') as f:
@@ -146,6 +137,12 @@ class DatasetBuilder(Dataset):
             print(img_path)
         return torch.FloatTensor(img)
 
+    @staticmethod
+    def get_classes(classes_path):
+        with open(classes_path, 'r') as f:
+            classes = f.read().split('\n')
+        return classes
+
 
 def create_dataloaders(train_data_path, val_data_path, classes_path, img_size, batch_size, augment, logger):
     """
@@ -173,7 +170,6 @@ def create_dataloaders(train_data_path, val_data_path, classes_path, img_size, b
                               shuffle=True)
     val_loader = DataLoader(dataset=val_data, pin_memory=True,
                             batch_size=batch_size)
-
     classes = train_data.classes
 
     return train_loader, val_loader, classes
