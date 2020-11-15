@@ -1,4 +1,5 @@
 import os
+import glob
 import argparse
 from shutil import copyfile
 import yaml
@@ -7,12 +8,14 @@ import torch.nn as nn
 
 from utils.dataset import create_dataloaders
 from utils.utils import get_device, get_logger, get_tb_writer, copy_config
+from utils.lr_schedulers import StepDecayLR
 from utils.dataset import create_dataloaders
 from models.CustomNet import CustomNet
 from models.resnet import ResNet18, ResNet34, ResNet50, ResNet101, ResNet152
 
 
 class Train():
+
     def __init__(self, config):
         self.logger = get_logger()
         self.writer = get_tb_writer(config["Logging"]["tb_logdir"], config["Logging"]["ckpt_dir"])
@@ -22,9 +25,11 @@ class Train():
         self.input_shape = config["Train"]["image_size"]
         self.channels = config["Train"]["channels"]
         self.ckpt_dir = config["Logging"]["ckpt_dir"]
+        self.eval_per_epoch = config["Train"]["eval_per_epoch"]
         self.device = get_device(config["Train"]["device"])
         self.model = self.load_model(config["Train"]["arch"], config["Train"]["pretrained"])
-        self.optimizer = self.get_optimizer(config["Train"]["optimizer"], config["Train"]["lr_init"])
+        self.optimizer = self.get_optimizer(config["Train"]["optimizer"], config["Train"]["lr_scheduler"]["lr_init"])
+        self.scheduler = self.get_scheduler(config["Train"]["lr_scheduler"])
         self.train_loader, self.val_loader, self.classes = \
             create_dataloaders(train_data_path=config["Dataset"]["train_data_path"],
                                val_data_path=config["Dataset"]["val_data_path"],
@@ -34,7 +39,6 @@ class Train():
                                augment=config["Augmentation"],
                                logger=self.logger)
         self.criterion = nn.CrossEntropyLoss()
-
 
     def get_optimizer(self, opt, lr=0.001):
         """
@@ -54,6 +58,16 @@ class Train():
             raise NotImplementedError(f"Not supported optimizer name: {opt}."
                                       f"For supported optimizers see documentation")
         return optimizer
+
+    def get_scheduler(self, lr_scheduler_dict):
+        if lr_scheduler_dict["StepDecay"]["use"]:
+            lr_scheduler = StepDecayLR(optimizer=self.optimizer,
+                                       lr_init=lr_scheduler_dict["lr_init"],
+                                       lr_end=lr_scheduler_dict["lr_end"],
+                                       epoch_steps=lr_scheduler_dict["StepDecay"]["epoch_steps"])
+            return lr_scheduler
+        else:
+            return False
 
     def get_model(self, arch):
         """
@@ -88,30 +102,17 @@ class Train():
 
         return model.cuda(self.device)
 
-    def save_model(self, epoch, results):
+    def save_model(self, step):
         """ Save model
         Args:
-            epoch: Number of epoch
-            results: list, List of dicts with results
+            step: Number of steps
         """
-        best_acc = 0
-        best_epoch = 0
         ckpt_dir = os.path.join(self.ckpt_dir, "checkpoints")
         if not os.path.isdir(ckpt_dir):
             os.makedirs(ckpt_dir)
-        ckpt_path = os.path.join(ckpt_dir, "model_epoch" + str(epoch) + ".pt")
+        ckpt_path = os.path.join(ckpt_dir, "model_step_" + str(step) + ".pt")
         torch.save(self.model.state_dict(), ckpt_path)
         self.logger.info(f"Model saved: {ckpt_path}")
-
-        best_ckpt_path = os.path.join(ckpt_dir, "best_model_epoch" + str(epoch) + ".pt")
-        for res in results:
-            if res["val_accuracy"] > best_acc:
-                best_epoch = res["epoch"]
-        best_epoch = os.path.join(ckpt_dir, "model_epoch" + str(best_epoch) + ".pt")
-        if os.path.isfile(best_epoch):
-            copyfile(best_epoch, best_ckpt_path)
-        else:
-            self.logger.info(f"The best epoch not found: {best_epoch}")
 
     def train(self):
 
@@ -122,9 +123,11 @@ class Train():
         self.logger.info(f"Number of parameters: {total_num_params}")
 
         global_step = 0
-        self.logger.info(f"---------------- Training Started ----------------")
+        eval_step = len(self.train_loader) // self.eval_per_epoch
+        log_step = len(self.train_loader) // 20
         results = []
 
+        self.logger.info(f"---------------- Training Started ----------------")
         for epoch in range(self.epochs):
             epoch += 1
             for batch, (X_train, y_train) in enumerate(self.train_loader):
@@ -135,35 +138,42 @@ class Train():
                 y_pred = self.model(X_train)
                 train_loss = self.criterion(y_pred, y_train)
 
-                global_step += batch
-                self.writer.add_scalar("train_loss", train_loss.item(), global_step)
+                global_step += self.batch_size
 
                 self.optimizer.zero_grad()
                 train_loss.backward()
                 self.optimizer.step()
-                if batch % 100 == 0:
+
+                if self.scheduler:
+                    self.scheduler.step(epoch)
+
+                self.writer.add_scalar("train_loss", train_loss.item(), global_step)
+                self.writer.add_scalar("learning_rate", self.optimizer.param_groups[0]["lr"], global_step)
+
+                if batch % log_step == 0:
                     self.logger.info(f"epoch: {epoch}/{self.epochs}, "
-                                     f"batch: {batch}/{len(self.train_loader)}"
-                                     f", train_loss: {train_loss.item()}")
+                                     f"batch: {batch}/{len(self.train_loader)}, "
+                                     f"train_loss: {train_loss.item()}")
 
-            val_corr = 0
-            with torch.no_grad():
-                for batch, (X_val, y_val) in enumerate(self.val_loader):
-                    batch += 1
-                    X_val = X_val.cuda(self.device)
-                    y_val = y_val.cuda(self.device)
-                    y_pred = self.model(X_val)
-                    predicted = torch.max(y_pred.data, 1)[1]
-                    val_corr += (predicted == y_val).sum()
+                if batch % eval_step == 0:
+                    val_corr = 0
+                    with torch.no_grad():
+                        for val_batch, (X_val, y_val) in enumerate(self.val_loader):
+                            val_batch += 1
+                            X_val = X_val.cuda(self.device)
+                            y_val = y_val.cuda(self.device)
+                            val_pred = self.model(X_val)
+                            predicted = torch.max(val_pred.data, 1)[1]
+                            val_corr += (predicted == y_val).sum()
 
-                val_loss = self.criterion(y_pred, y_val)
-                self.logger.info(f"Val loss: {val_loss.item()}")
-                self.writer.add_scalar("val_loss", val_loss.item(), global_step)
-                acc = int(float(val_corr) / (float(self.batch_size) * float(len(self.val_loader))) * 100.)
-                self.logger.info(f"val_accuracy: {acc}%")
-                self.writer.add_scalar("val_accuracy", acc, epoch)
-                results.append({"epoch": epoch, "val_accuracy": acc})
-                self.save_model(epoch, results)
+                        val_loss = self.criterion(val_pred, y_val)
+                        self.logger.info(f"Val loss: {val_loss.item()}")
+                        self.writer.add_scalar("val_loss", val_loss.item(), global_step)
+                        acc = int(float(val_corr) / (float(self.batch_size) * float(len(self.val_loader))) * 100.)
+                        self.logger.info(f"val_accuracy: {acc}%")
+                        self.writer.add_scalar("val_accuracy", acc, epoch)
+                        results.append({"epoch": epoch, "val_accuracy": acc})
+                        self.save_model(global_step)
 
         self.logger.info(f"---------------- Training Finished ----------------")
 

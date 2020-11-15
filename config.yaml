@@ -4,11 +4,15 @@ Dataset:
   classes_path: "C://Machine Learning//Datasets//TrafficSigns//classes.txt"
   num_classes: 43
 Train:
-  lr_init: 0.001
-  lr_end: 0.0001
-  lr_scheduler: "StepDecay"  # Not implemented
-  batch_size: 2
+  lr_scheduler:
+    lr_init: 0.01
+    lr_end: 0.0001
+    StepDecay:
+      use: True
+      epoch_steps: [1, 3, 5]
+  batch_size: 8
   epochs: 20
+  eval_per_epoch: 3
   image_size: [240, 160]
   channels: 3
   optimizer: "adam"
@@ -30,4 +34,4 @@ Augmentation:
 
 Logging:
   tb_logdir: "C:\\Machine Learning\\Classification Networks PyTorch\\logs\\TrafficSigns"
-  ckpt_dir: "C:\\Machine Learning\\Classification Networks PyTorch\\checkpoints\\TrafficSigns\\ResNet18_2"
+  ckpt_dir: "C:\\Machine Learning\\Classification Networks PyTorch\\checkpoints\\TrafficSigns\\ResNet18_3"
