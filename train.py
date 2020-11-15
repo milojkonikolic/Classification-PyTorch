@@ -95,6 +95,7 @@ class Train():
 
         model = self.get_model(arch)
         if pretrained:
+            self.logger.info(f"Loading weights from {pretrained}...")
             model.load_state_dict(torch.load(pretrained))
             model.eval()
 
@@ -122,7 +123,7 @@ class Train():
 
         global_step = 0
         eval_steps = list(np.linspace(len(self.train_loader) // self.eval_per_epoch, len(self.train_loader),
-                                      self.eval_per_epoch))
+                                      self.eval_per_epoch).astype(int))
         log_step = len(self.train_loader) // 20
         results = []
 
@@ -166,11 +167,11 @@ class Train():
                             val_corr += (predicted == y_val).sum()
 
                         val_loss = self.criterion(val_pred, y_val)
-                        self.logger.info(f"Val loss: {val_loss.item()}")
+                        self.logger.info(f"batch: {batch}/{len(self.train_loader)}, val loss: {val_loss.item()}")
                         self.writer.add_scalar("val_loss", val_loss.item(), global_step)
                         acc = int(float(val_corr) / (float(self.batch_size) * float(len(self.val_loader))) * 100.)
-                        self.logger.info(f"batch: {batch}/{len(self.train_loader)}\n val_accuracy: {acc}%")
-                        self.writer.add_scalar("val_accuracy", acc, epoch)
+                        self.logger.info(f"val_accuracy: {acc}%")
+                        self.writer.add_scalar("val_accuracy", acc, global_step)
                         results.append({"epoch": epoch, "val_accuracy": acc})
                         self.save_model(global_step)
 

@@ -25,7 +25,10 @@ def get_logger():
 
 
 def get_tb_writer(tb_logdir, ckpt_dir):
-    tb_logdir = os.path.join(tb_logdir, ckpt_dir.split("\\")[-1])
+    if '/' in ckpt_dir:
+        tb_logdir = os.path.join(tb_logdir, ckpt_dir.split("/")[-1])
+    else:
+        tb_logdir = os.path.join(tb_logdir, ckpt_dir.split("\\")[-1])
     if os.path.isdir(tb_logdir):
         rmtree(tb_logdir)
     os.mkdir(tb_logdir)
