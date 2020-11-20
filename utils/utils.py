@@ -25,6 +25,13 @@ def get_logger():
 
 
 def get_tb_writer(tb_logdir, ckpt_dir):
+    """
+    Args:
+        tb_logdir: str, Path to directory fot tensorboard events
+        ckpt_dir: str, Path to checkpoints directory
+    Return:
+        writer: TensorBoard writer
+    """
     if '/' in ckpt_dir:
         tb_logdir = os.path.join(tb_logdir, ckpt_dir.split("/")[-1])
     else:
@@ -60,6 +67,7 @@ def get_model(arch, num_classes, input_shape, channels=3):
     Args:
         arch: string, Network architecture
         num_classes: int, Number of classes
+        input_shape: list/tuple, Input shape of the network
         channels: int, Number of input channels
     Returns:
         model, nn.Module, generated model
@@ -111,6 +119,14 @@ def save_model(model, epoch, ckpt_dir, results, logger):
 
 
 def load_model(model_path, arch, num_classes, input_shape, channels=3):
+    """
+    Args:
+        model_path: str, Path to model
+        arch: str, Network architectire (See documentation for supported architectures)
+        num_classes: int, Number of classes
+        input_shape: list/tuple, Input shape of the network
+        channels: int, Number of input channels
+    """
 
     model = get_model(arch, num_classes, input_shape, channels)
 
@@ -141,6 +157,12 @@ def get_optimizer(opt, model, lr):
 
 
 def preprocess_img(img):
+    """ Transform input image to excepted format for network
+    Args:
+        img: numpy array, Input image
+    Return
+        img: numpy array, Preprocessed image
+    """
     img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
     img = cv.resize(img, (240, 160))
     img = np.transpose(img, (2, 0, 1))
@@ -151,6 +173,10 @@ def preprocess_img(img):
 
 
 def copy_config(config):
+    """ Copy used config for training to checkpoints directory
+    Args:
+    config: Config file
+    """
     ckpt_dir = config["Logging"]["ckpt_dir"]
     if not os.path.isdir(ckpt_dir):
         os.makedirs(ckpt_dir)

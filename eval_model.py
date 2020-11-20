@@ -5,15 +5,24 @@ import yaml
 import random
 import cv2 as cv
 import torch
+from tqdm import tqdm
 
 from utils.utils import load_model, preprocess_img, get_device
 
 
 def evaluate(model, data, device):
+    """ Get predictions from model and calculate accuracy
+    Args:
+        model: PyTorch Model
+        data: List of images
+        device: cuda or cpu
+    Return:
+
+    """
 
     correct = 0
-    for num, d in enumerate(data):
-        print(f"Progress: {num+1}/{len(data)}", end='\r')
+    for num in tqdm(range(len(data))):
+        d = data[num]
         img_path = d["img_path"]
         label = d["label"]
         img = cv.imread(img_path)
@@ -24,8 +33,6 @@ def evaluate(model, data, device):
 
         if predicted == label:
             correct += 1
-        # print(f"label: {label}")
-        # print(f"pred: {predicted}\n")
     acc = correct / len(data)
     print(f"Accuracy: {acc}")
 
