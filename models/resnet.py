@@ -8,7 +8,7 @@ def get_padd(kernel_size):
     if isinstance(kernel_size, int):
         return kernel_size // 2
     elif isinstance(kernel_size, list) or isinstance(kernel_size, tuple):
-        return (kernel_size[0] / 2, kernel_size[1] / 2)
+        return (kernel_size[0] // 2, kernel_size[1] // 2)
     else:
         raise ValueError(f"Not supported type for kernel_size: {type(kernel_size)}. Supported types: int, list, tuple")
 
