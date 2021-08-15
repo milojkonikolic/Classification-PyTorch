@@ -22,13 +22,13 @@ def evaluate(model, dataset, device):
     correct = 0
     for num in tqdm(range(len(dataset))):
         img, label = dataset[num]
-        img = img.cuda(device)
+        img = img.unsqueeze(0).cuda(device)
         pred = model(img)
         predicted = int(torch.max(pred.data, 1)[1])
         if predicted == label:
             correct += 1
-    acc = correct / len(dataset)
-    print(f"Accuracy: {acc}")
+    acc = int(correct / len(dataset) * 100)
+    print(f"Accuracy: {acc} %")
 
 
 if __name__ == "__main__":

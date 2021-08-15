@@ -1,4 +1,5 @@
 import os
+import glob
 from shutil import copyfile
 import torch
 
@@ -34,18 +35,17 @@ def get_model(arch, num_classes, input_shape, channels=3):
     return model
 
 
-def save_model(model, epoch, batches, ckpt_dir, results, logger):
+def save_model(model, epoch, batches, ckpt_dir, accuracy, best_accuracy, logger):
     """ Save model
     Args:
         model: Model for saving
         epoch: Number of epoch
         batches: Number of batches
         ckpt_dir: Store directory
-        results: Dict with val results
+        accuracy: Current accuracy
+        best_accuracy: Best accuracy
         logger: logger
     """
-    best_acc = 0
-    best_epoch = 0
     ckpt_dir = os.path.join(ckpt_dir, "checkpoints")
     if not os.path.isdir(ckpt_dir):
         os.makedirs(ckpt_dir)
@@ -53,16 +53,13 @@ def save_model(model, epoch, batches, ckpt_dir, results, logger):
     torch.save(model.state_dict(), ckpt_path)
     logger.info(f"Model saved: {ckpt_path}")
 
-    best_ckpt_path = ckpt_path.replace("model_epoch", "best_model_epoch")
-    for res in results:
-        if res["val_accuracy"] > best_acc:
-            best_epoch = res["epoch"]
-            batches = res["batches"]
-    best_epoch = os.path.join(ckpt_dir, "model_epoch_" + str(best_epoch) + "_batch_" + str(batches) + ".pt")
-    if os.path.isfile(best_epoch):
-        copyfile(best_epoch, best_ckpt_path)
-    else:
-        logger.info(f"The best epoch not found: {best_epoch}")
+    if accuracy == best_accuracy:
+        best_ckpt_path = ckpt_path.replace("model_epoch", "best_model_epoch")
+        prev_best_model = glob.glob(os.path.join(ckpt_dir, "best_model*"))
+        if len(prev_best_model) > 0:
+            prev_best_model = prev_best_model[0]
+            os.remove(prev_best_model)
+        copyfile(ckpt_path, best_ckpt_path)
 
 
 def load_model(arch, num_classes, input_shape, device, model_path='', channels=3, logger=None):
