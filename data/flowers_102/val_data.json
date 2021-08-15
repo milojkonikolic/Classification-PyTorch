@@ -1,0 +1,4682 @@
+[
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00001.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00008.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00015.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00022.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00029.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00036.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00043.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00050.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00057.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00064.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00071.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00078.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00085.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00092.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00099.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00106.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00113.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00120.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00127.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00134.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00141.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00148.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00155.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00162.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00169.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00176.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00183.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00190.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00197.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00204.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00211.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00218.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00225.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00232.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00239.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00246.jpg",
+    "label": 76
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00253.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00260.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00267.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00274.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00281.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00288.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00295.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00302.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00309.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00316.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00323.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00330.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00337.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00344.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00351.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00358.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00365.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00372.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00379.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00386.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00393.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00400.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00407.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00414.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00421.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00428.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00435.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00442.jpg",
+    "label": 72
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00449.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00456.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00463.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00470.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00477.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00484.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00491.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00498.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00505.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00512.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00519.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00526.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00533.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00540.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00547.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00554.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00561.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00568.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00575.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00582.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00589.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00596.jpg",
+    "label": 87
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00603.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00610.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00617.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00624.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00631.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00638.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00645.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00652.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00659.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00666.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00673.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00680.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00687.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00694.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00701.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00708.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00715.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00722.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00729.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00736.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00743.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00750.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00757.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00764.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00771.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00778.jpg",
+    "label": 88
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00785.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00792.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00799.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00806.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00813.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00820.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00827.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00834.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00841.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00848.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00855.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00862.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00869.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00876.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00883.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00890.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00897.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00904.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00911.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00918.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00925.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00932.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00939.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00946.jpg",
+    "label": 80
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00953.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00960.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00967.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00974.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00981.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00988.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_00995.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01002.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01009.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01016.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01023.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01030.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01037.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01044.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01051.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01058.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01065.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01072.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01079.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01086.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01093.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01100.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01107.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01114.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01121.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01128.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01135.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01142.jpg",
+    "label": 45
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01149.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01156.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01163.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01170.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01177.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01184.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01191.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01198.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01205.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01212.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01219.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01226.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01233.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01240.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01247.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01254.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01261.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01268.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01275.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01282.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01289.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01296.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01303.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01310.jpg",
+    "label": 73
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01317.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01324.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01331.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01338.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01345.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01352.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01359.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01366.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01373.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01380.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01387.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01394.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01401.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01408.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01415.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01422.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01429.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01436.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01443.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01450.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01457.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01464.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01471.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01478.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01485.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01492.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01499.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01506.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01513.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01520.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01527.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01534.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01541.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01548.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01555.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01562.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01569.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01576.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01583.jpg",
+    "label": 43
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01590.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01597.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01604.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01611.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01618.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01625.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01632.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01639.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01646.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01653.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01660.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01667.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01674.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01681.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01688.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01695.jpg",
+    "label": 81
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01702.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01709.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01716.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01723.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01730.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01737.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01744.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01751.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01758.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01765.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01772.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01779.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01786.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01793.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01800.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01807.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01814.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01821.jpg",
+    "label": 82
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01828.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01835.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01842.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01849.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01856.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01863.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01870.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01877.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01884.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01891.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01898.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01905.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01912.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01919.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01926.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01933.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01940.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01947.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01954.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01961.jpg",
+    "label": 77
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01968.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01975.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01982.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01989.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_01996.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02003.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02010.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02017.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02024.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02031.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02038.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02045.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02052.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02059.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02066.jpg",
+    "label": 79
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02073.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02080.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02087.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02094.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02101.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02108.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02115.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02122.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02129.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02136.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02143.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02150.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02157.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02164.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02171.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02178.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02185.jpg",
+    "label": 74
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02192.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02199.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02206.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02213.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02220.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02227.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02234.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02241.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02248.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02255.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02262.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02269.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02276.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02283.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02290.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02297.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02304.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02311.jpg",
+    "label": 40
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02318.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02325.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02332.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02339.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02346.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02353.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02360.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02367.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02374.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02381.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02388.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02395.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02402.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02409.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02416.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02423.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02430.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02437.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02444.jpg",
+    "label": 42
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02451.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02458.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02465.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02472.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02479.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02486.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02493.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02500.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02507.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02514.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02521.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02528.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02535.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02542.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02549.jpg",
+    "label": 75
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02556.jpg",
+    "label": 83
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02563.jpg",
+    "label": 83
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02570.jpg",
+    "label": 83
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02577.jpg",
+    "label": 83
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02584.jpg",
+    "label": 83
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02591.jpg",
+    "label": 83
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02598.jpg",
+    "label": 83
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02605.jpg",
+    "label": 83
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02612.jpg",
+    "label": 83
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02619.jpg",
+    "label": 83
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02626.jpg",
+    "label": 83
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02633.jpg",
+    "label": 83
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02640.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02647.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02654.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02661.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02668.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02675.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02682.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02689.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02696.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02703.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02710.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02717.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02724.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02731.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02738.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02745.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02752.jpg",
+    "label": 57
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02759.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02766.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02773.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02780.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02787.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02794.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02801.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02808.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02815.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02822.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02829.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02836.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02843.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02850.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02857.jpg",
+    "label": 55
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02864.jpg",
+    "label": 85
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02871.jpg",
+    "label": 85
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02878.jpg",
+    "label": 85
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02885.jpg",
+    "label": 85
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02892.jpg",
+    "label": 85
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02899.jpg",
+    "label": 85
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02906.jpg",
+    "label": 85
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02913.jpg",
+    "label": 85
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02920.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02927.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02934.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02941.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02948.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02955.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02962.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02969.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02976.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02983.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02990.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_02997.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03004.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03011.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03018.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03025.jpg",
+    "label": 59
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03032.jpg",
+    "label": 91
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03039.jpg",
+    "label": 91
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03046.jpg",
+    "label": 91
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03053.jpg",
+    "label": 91
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03060.jpg",
+    "label": 91
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03067.jpg",
+    "label": 91
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03074.jpg",
+    "label": 91
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03081.jpg",
+    "label": 91
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03088.jpg",
+    "label": 91
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03095.jpg",
+    "label": 10
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03102.jpg",
+    "label": 10
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03109.jpg",
+    "label": 10
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03116.jpg",
+    "label": 10
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03123.jpg",
+    "label": 10
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03130.jpg",
+    "label": 10
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03137.jpg",
+    "label": 10
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03144.jpg",
+    "label": 10
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03151.jpg",
+    "label": 10
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03158.jpg",
+    "label": 10
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03165.jpg",
+    "label": 10
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03172.jpg",
+    "label": 10
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03179.jpg",
+    "label": 10
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03186.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03193.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03200.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03207.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03214.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03221.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03228.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03235.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03242.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03249.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03256.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03263.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03270.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03277.jpg",
+    "label": 64
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03284.jpg",
+    "label": 7
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03291.jpg",
+    "label": 7
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03298.jpg",
+    "label": 7
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03305.jpg",
+    "label": 7
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03312.jpg",
+    "label": 7
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03319.jpg",
+    "label": 7
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03326.jpg",
+    "label": 7
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03333.jpg",
+    "label": 7
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03340.jpg",
+    "label": 7
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03347.jpg",
+    "label": 7
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03354.jpg",
+    "label": 7
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03361.jpg",
+    "label": 7
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03368.jpg",
+    "label": 7
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03375.jpg",
+    "label": 22
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03382.jpg",
+    "label": 22
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03389.jpg",
+    "label": 22
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03396.jpg",
+    "label": 22
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03403.jpg",
+    "label": 22
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03410.jpg",
+    "label": 22
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03417.jpg",
+    "label": 22
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03424.jpg",
+    "label": 22
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03431.jpg",
+    "label": 22
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03438.jpg",
+    "label": 22
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03445.jpg",
+    "label": 22
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03452.jpg",
+    "label": 22
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03459.jpg",
+    "label": 22
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03466.jpg",
+    "label": 29
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03473.jpg",
+    "label": 29
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03480.jpg",
+    "label": 29
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03487.jpg",
+    "label": 29
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03494.jpg",
+    "label": 29
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03501.jpg",
+    "label": 29
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03508.jpg",
+    "label": 29
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03515.jpg",
+    "label": 29
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03522.jpg",
+    "label": 29
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03529.jpg",
+    "label": 29
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03536.jpg",
+    "label": 29
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03543.jpg",
+    "label": 29
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03550.jpg",
+    "label": 71
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03557.jpg",
+    "label": 71
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03564.jpg",
+    "label": 71
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03571.jpg",
+    "label": 71
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03578.jpg",
+    "label": 71
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03585.jpg",
+    "label": 71
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03592.jpg",
+    "label": 71
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03599.jpg",
+    "label": 71
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03606.jpg",
+    "label": 71
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03613.jpg",
+    "label": 71
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03620.jpg",
+    "label": 71
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03627.jpg",
+    "label": 71
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03634.jpg",
+    "label": 71
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03641.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03648.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03655.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03662.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03669.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03676.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03683.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03690.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03697.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03704.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03711.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03718.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03725.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03732.jpg",
+    "label": 52
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03739.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03746.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03753.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03760.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03767.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03774.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03781.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03788.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03795.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03802.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03809.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03816.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03823.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03830.jpg",
+    "label": 16
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03837.jpg",
+    "label": 16
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03844.jpg",
+    "label": 16
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03851.jpg",
+    "label": 16
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03858.jpg",
+    "label": 16
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03865.jpg",
+    "label": 16
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03872.jpg",
+    "label": 16
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03879.jpg",
+    "label": 16
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03886.jpg",
+    "label": 16
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03893.jpg",
+    "label": 16
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03900.jpg",
+    "label": 16
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03907.jpg",
+    "label": 16
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03914.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03921.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03928.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03935.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03942.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03949.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03956.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03963.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03970.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03977.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03984.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03991.jpg",
+    "label": 50
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_03998.jpg",
+    "label": 11
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04005.jpg",
+    "label": 11
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04012.jpg",
+    "label": 11
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04019.jpg",
+    "label": 11
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04026.jpg",
+    "label": 11
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04033.jpg",
+    "label": 11
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04040.jpg",
+    "label": 11
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04047.jpg",
+    "label": 11
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04054.jpg",
+    "label": 11
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04061.jpg",
+    "label": 11
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04068.jpg",
+    "label": 11
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04075.jpg",
+    "label": 11
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04082.jpg",
+    "label": 28
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04089.jpg",
+    "label": 28
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04096.jpg",
+    "label": 28
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04103.jpg",
+    "label": 28
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04110.jpg",
+    "label": 28
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04117.jpg",
+    "label": 28
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04124.jpg",
+    "label": 28
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04131.jpg",
+    "label": 28
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04138.jpg",
+    "label": 28
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04145.jpg",
+    "label": 28
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04152.jpg",
+    "label": 28
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04159.jpg",
+    "label": 51
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04166.jpg",
+    "label": 51
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04173.jpg",
+    "label": 51
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04180.jpg",
+    "label": 51
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04187.jpg",
+    "label": 51
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04194.jpg",
+    "label": 51
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04201.jpg",
+    "label": 51
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04208.jpg",
+    "label": 51
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04215.jpg",
+    "label": 51
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04222.jpg",
+    "label": 51
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04229.jpg",
+    "label": 51
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04236.jpg",
+    "label": 51
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04243.jpg",
+    "label": 51
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04250.jpg",
+    "label": 17
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04257.jpg",
+    "label": 17
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04264.jpg",
+    "label": 17
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04271.jpg",
+    "label": 17
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04278.jpg",
+    "label": 17
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04285.jpg",
+    "label": 17
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04292.jpg",
+    "label": 17
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04299.jpg",
+    "label": 17
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04306.jpg",
+    "label": 17
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04313.jpg",
+    "label": 17
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04320.jpg",
+    "label": 17
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04327.jpg",
+    "label": 35
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04334.jpg",
+    "label": 35
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04341.jpg",
+    "label": 35
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04348.jpg",
+    "label": 35
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04355.jpg",
+    "label": 35
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04362.jpg",
+    "label": 35
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04369.jpg",
+    "label": 35
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04376.jpg",
+    "label": 35
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04383.jpg",
+    "label": 35
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04390.jpg",
+    "label": 35
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04397.jpg",
+    "label": 35
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04404.jpg",
+    "label": 89
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04411.jpg",
+    "label": 89
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04418.jpg",
+    "label": 89
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04425.jpg",
+    "label": 89
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04432.jpg",
+    "label": 89
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04439.jpg",
+    "label": 89
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04446.jpg",
+    "label": 89
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04453.jpg",
+    "label": 89
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04460.jpg",
+    "label": 89
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04467.jpg",
+    "label": 89
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04474.jpg",
+    "label": 89
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04481.jpg",
+    "label": 70
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04488.jpg",
+    "label": 70
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04495.jpg",
+    "label": 70
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04502.jpg",
+    "label": 70
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04509.jpg",
+    "label": 70
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04516.jpg",
+    "label": 70
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04523.jpg",
+    "label": 70
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04530.jpg",
+    "label": 70
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04537.jpg",
+    "label": 70
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04544.jpg",
+    "label": 70
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04551.jpg",
+    "label": 70
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04558.jpg",
+    "label": 39
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04565.jpg",
+    "label": 39
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04572.jpg",
+    "label": 39
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04579.jpg",
+    "label": 39
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04586.jpg",
+    "label": 39
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04593.jpg",
+    "label": 39
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04600.jpg",
+    "label": 39
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04607.jpg",
+    "label": 39
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04614.jpg",
+    "label": 39
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04621.jpg",
+    "label": 39
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04628.jpg",
+    "label": 47
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04635.jpg",
+    "label": 47
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04642.jpg",
+    "label": 47
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04649.jpg",
+    "label": 47
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04656.jpg",
+    "label": 47
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04663.jpg",
+    "label": 47
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04670.jpg",
+    "label": 47
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04677.jpg",
+    "label": 47
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04684.jpg",
+    "label": 47
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04691.jpg",
+    "label": 47
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04698.jpg",
+    "label": 54
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04705.jpg",
+    "label": 54
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04712.jpg",
+    "label": 54
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04719.jpg",
+    "label": 54
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04726.jpg",
+    "label": 54
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04733.jpg",
+    "label": 54
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04740.jpg",
+    "label": 54
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04747.jpg",
+    "label": 54
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04754.jpg",
+    "label": 54
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04761.jpg",
+    "label": 54
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04768.jpg",
+    "label": 84
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04775.jpg",
+    "label": 84
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04782.jpg",
+    "label": 84
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04789.jpg",
+    "label": 84
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04796.jpg",
+    "label": 84
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04803.jpg",
+    "label": 84
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04810.jpg",
+    "label": 84
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04817.jpg",
+    "label": 84
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04824.jpg",
+    "label": 84
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04831.jpg",
+    "label": 90
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04838.jpg",
+    "label": 90
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04845.jpg",
+    "label": 90
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04852.jpg",
+    "label": 90
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04859.jpg",
+    "label": 90
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04866.jpg",
+    "label": 90
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04873.jpg",
+    "label": 90
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04880.jpg",
+    "label": 90
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04887.jpg",
+    "label": 90
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04894.jpg",
+    "label": 90
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04901.jpg",
+    "label": 19
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04908.jpg",
+    "label": 19
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04915.jpg",
+    "label": 19
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04922.jpg",
+    "label": 19
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04929.jpg",
+    "label": 19
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04936.jpg",
+    "label": 19
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04943.jpg",
+    "label": 19
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04950.jpg",
+    "label": 19
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04957.jpg",
+    "label": 46
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04964.jpg",
+    "label": 46
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04971.jpg",
+    "label": 46
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04978.jpg",
+    "label": 46
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04985.jpg",
+    "label": 46
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04992.jpg",
+    "label": 46
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_04999.jpg",
+    "label": 46
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05006.jpg",
+    "label": 46
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05013.jpg",
+    "label": 46
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05020.jpg",
+    "label": 58
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05027.jpg",
+    "label": 58
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05034.jpg",
+    "label": 58
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05041.jpg",
+    "label": 58
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05048.jpg",
+    "label": 58
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05055.jpg",
+    "label": 58
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05062.jpg",
+    "label": 58
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05069.jpg",
+    "label": 58
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05076.jpg",
+    "label": 58
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05083.jpg",
+    "label": 58
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05090.jpg",
+    "label": 1
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05097.jpg",
+    "label": 1
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05104.jpg",
+    "label": 1
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05111.jpg",
+    "label": 1
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05118.jpg",
+    "label": 1
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05125.jpg",
+    "label": 1
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05132.jpg",
+    "label": 1
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05139.jpg",
+    "label": 1
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05146.jpg",
+    "label": 1
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05153.jpg",
+    "label": 4
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05160.jpg",
+    "label": 4
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05167.jpg",
+    "label": 4
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05174.jpg",
+    "label": 4
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05181.jpg",
+    "label": 4
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05188.jpg",
+    "label": 4
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05195.jpg",
+    "label": 4
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05202.jpg",
+    "label": 4
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05209.jpg",
+    "label": 4
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05216.jpg",
+    "label": 27
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05223.jpg",
+    "label": 27
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05230.jpg",
+    "label": 27
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05237.jpg",
+    "label": 27
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05244.jpg",
+    "label": 27
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05251.jpg",
+    "label": 27
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05258.jpg",
+    "label": 27
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05265.jpg",
+    "label": 27
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05272.jpg",
+    "label": 27
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05279.jpg",
+    "label": 69
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05286.jpg",
+    "label": 69
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05293.jpg",
+    "label": 69
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05300.jpg",
+    "label": 69
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05307.jpg",
+    "label": 69
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05314.jpg",
+    "label": 69
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05321.jpg",
+    "label": 69
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05328.jpg",
+    "label": 69
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05335.jpg",
+    "label": 69
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05342.jpg",
+    "label": 21
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05349.jpg",
+    "label": 21
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05356.jpg",
+    "label": 21
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05363.jpg",
+    "label": 21
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05370.jpg",
+    "label": 21
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05377.jpg",
+    "label": 21
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05384.jpg",
+    "label": 21
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05391.jpg",
+    "label": 21
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05398.jpg",
+    "label": 21
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05405.jpg",
+    "label": 53
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05412.jpg",
+    "label": 53
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05419.jpg",
+    "label": 53
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05426.jpg",
+    "label": 53
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05433.jpg",
+    "label": 53
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05440.jpg",
+    "label": 53
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05447.jpg",
+    "label": 53
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05454.jpg",
+    "label": 53
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05461.jpg",
+    "label": 86
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05468.jpg",
+    "label": 86
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05475.jpg",
+    "label": 86
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05482.jpg",
+    "label": 86
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05489.jpg",
+    "label": 86
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05496.jpg",
+    "label": 86
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05503.jpg",
+    "label": 86
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05510.jpg",
+    "label": 86
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05517.jpg",
+    "label": 86
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05524.jpg",
+    "label": 65
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05531.jpg",
+    "label": 65
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05538.jpg",
+    "label": 65
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05545.jpg",
+    "label": 65
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05552.jpg",
+    "label": 65
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05559.jpg",
+    "label": 65
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05566.jpg",
+    "label": 65
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05573.jpg",
+    "label": 65
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05580.jpg",
+    "label": 65
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05587.jpg",
+    "label": 31
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05594.jpg",
+    "label": 31
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05601.jpg",
+    "label": 31
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05608.jpg",
+    "label": 31
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05615.jpg",
+    "label": 31
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05622.jpg",
+    "label": 31
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05629.jpg",
+    "label": 3
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05636.jpg",
+    "label": 3
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05643.jpg",
+    "label": 3
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05650.jpg",
+    "label": 3
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05657.jpg",
+    "label": 3
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05664.jpg",
+    "label": 3
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05671.jpg",
+    "label": 3
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05678.jpg",
+    "label": 3
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05685.jpg",
+    "label": 41
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05692.jpg",
+    "label": 41
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05699.jpg",
+    "label": 41
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05706.jpg",
+    "label": 41
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05713.jpg",
+    "label": 41
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05720.jpg",
+    "label": 41
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05727.jpg",
+    "label": 41
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05734.jpg",
+    "label": 41
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05741.jpg",
+    "label": 41
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05748.jpg",
+    "label": 12
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05755.jpg",
+    "label": 12
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05762.jpg",
+    "label": 12
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05769.jpg",
+    "label": 12
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05776.jpg",
+    "label": 12
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05783.jpg",
+    "label": 12
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05790.jpg",
+    "label": 12
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05797.jpg",
+    "label": 37
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05804.jpg",
+    "label": 37
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05811.jpg",
+    "label": 37
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05818.jpg",
+    "label": 37
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05825.jpg",
+    "label": 37
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05832.jpg",
+    "label": 37
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05839.jpg",
+    "label": 37
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05846.jpg",
+    "label": 37
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05853.jpg",
+    "label": 62
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05860.jpg",
+    "label": 62
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05867.jpg",
+    "label": 62
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05874.jpg",
+    "label": 62
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05881.jpg",
+    "label": 62
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05888.jpg",
+    "label": 62
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05895.jpg",
+    "label": 62
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05902.jpg",
+    "label": 62
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05909.jpg",
+    "label": 67
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05916.jpg",
+    "label": 67
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05923.jpg",
+    "label": 67
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05930.jpg",
+    "label": 67
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05937.jpg",
+    "label": 67
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05944.jpg",
+    "label": 67
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05951.jpg",
+    "label": 67
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05958.jpg",
+    "label": 68
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05965.jpg",
+    "label": 68
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05972.jpg",
+    "label": 68
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05979.jpg",
+    "label": 68
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05986.jpg",
+    "label": 68
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_05993.jpg",
+    "label": 68
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06000.jpg",
+    "label": 68
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06007.jpg",
+    "label": 68
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06014.jpg",
+    "label": 92
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06021.jpg",
+    "label": 92
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06028.jpg",
+    "label": 92
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06035.jpg",
+    "label": 92
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06042.jpg",
+    "label": 92
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06049.jpg",
+    "label": 13
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06056.jpg",
+    "label": 13
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06063.jpg",
+    "label": 13
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06070.jpg",
+    "label": 13
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06077.jpg",
+    "label": 13
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06084.jpg",
+    "label": 13
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06091.jpg",
+    "label": 13
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06098.jpg",
+    "label": 63
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06105.jpg",
+    "label": 63
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06112.jpg",
+    "label": 63
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06119.jpg",
+    "label": 63
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06126.jpg",
+    "label": 63
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06133.jpg",
+    "label": 63
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06140.jpg",
+    "label": 63
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06147.jpg",
+    "label": 63
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06154.jpg",
+    "label": 18
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06161.jpg",
+    "label": 18
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06168.jpg",
+    "label": 18
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06175.jpg",
+    "label": 18
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06182.jpg",
+    "label": 18
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06189.jpg",
+    "label": 18
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06196.jpg",
+    "label": 18
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06203.jpg",
+    "label": 48
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06210.jpg",
+    "label": 48
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06217.jpg",
+    "label": 48
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06224.jpg",
+    "label": 48
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06231.jpg",
+    "label": 48
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06238.jpg",
+    "label": 48
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06245.jpg",
+    "label": 48
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06252.jpg",
+    "label": 60
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06259.jpg",
+    "label": 60
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06266.jpg",
+    "label": 60
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06273.jpg",
+    "label": 60
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06280.jpg",
+    "label": 60
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06287.jpg",
+    "label": 60
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06294.jpg",
+    "label": 60
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06301.jpg",
+    "label": 49
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06308.jpg",
+    "label": 49
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06315.jpg",
+    "label": 49
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06322.jpg",
+    "label": 49
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06329.jpg",
+    "label": 49
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06336.jpg",
+    "label": 49
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06343.jpg",
+    "label": 49
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06350.jpg",
+    "label": 14
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06357.jpg",
+    "label": 14
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06364.jpg",
+    "label": 14
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06371.jpg",
+    "label": 14
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06378.jpg",
+    "label": 14
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06385.jpg",
+    "label": 14
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06392.jpg",
+    "label": 14
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06399.jpg",
+    "label": 8
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06406.jpg",
+    "label": 8
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06413.jpg",
+    "label": 8
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06420.jpg",
+    "label": 8
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06427.jpg",
+    "label": 8
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06434.jpg",
+    "label": 8
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06441.jpg",
+    "label": 32
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06448.jpg",
+    "label": 32
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06455.jpg",
+    "label": 32
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06462.jpg",
+    "label": 32
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06469.jpg",
+    "label": 32
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06476.jpg",
+    "label": 32
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06483.jpg",
+    "label": 32
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06490.jpg",
+    "label": 25
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06497.jpg",
+    "label": 25
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06504.jpg",
+    "label": 25
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06511.jpg",
+    "label": 25
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06518.jpg",
+    "label": 25
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06525.jpg",
+    "label": 25
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06532.jpg",
+    "label": 49
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06539.jpg",
+    "label": 49
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06546.jpg",
+    "label": 49
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06553.jpg",
+    "label": 49
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06560.jpg",
+    "label": 49
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06567.jpg",
+    "label": 49
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06574.jpg",
+    "label": 24
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06581.jpg",
+    "label": 24
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06588.jpg",
+    "label": 24
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06595.jpg",
+    "label": 24
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06602.jpg",
+    "label": 24
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06609.jpg",
+    "label": 24
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06616.jpg",
+    "label": 2
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06623.jpg",
+    "label": 2
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06630.jpg",
+    "label": 2
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06637.jpg",
+    "label": 2
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06644.jpg",
+    "label": 2
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06651.jpg",
+    "label": 2
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06658.jpg",
+    "label": 15
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06665.jpg",
+    "label": 15
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06672.jpg",
+    "label": 15
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06679.jpg",
+    "label": 15
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06686.jpg",
+    "label": 15
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06693.jpg",
+    "label": 78
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06700.jpg",
+    "label": 78
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06707.jpg",
+    "label": 78
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06714.jpg",
+    "label": 78
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06721.jpg",
+    "label": 78
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06728.jpg",
+    "label": 78
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06735.jpg",
+    "label": 0
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06742.jpg",
+    "label": 0
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06749.jpg",
+    "label": 0
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06756.jpg",
+    "label": 0
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06763.jpg",
+    "label": 0
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06770.jpg",
+    "label": 0
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06777.jpg",
+    "label": 20
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06784.jpg",
+    "label": 20
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06791.jpg",
+    "label": 20
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06798.jpg",
+    "label": 20
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06805.jpg",
+    "label": 20
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06812.jpg",
+    "label": 20
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06819.jpg",
+    "label": 23
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06826.jpg",
+    "label": 23
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06833.jpg",
+    "label": 23
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06840.jpg",
+    "label": 23
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06847.jpg",
+    "label": 23
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06854.jpg",
+    "label": 26
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06861.jpg",
+    "label": 26
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06868.jpg",
+    "label": 26
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06875.jpg",
+    "label": 26
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06882.jpg",
+    "label": 26
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06889.jpg",
+    "label": 26
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06896.jpg",
+    "label": 30
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06903.jpg",
+    "label": 30
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06910.jpg",
+    "label": 30
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06917.jpg",
+    "label": 30
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06924.jpg",
+    "label": 30
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06931.jpg",
+    "label": 33
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06938.jpg",
+    "label": 33
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06945.jpg",
+    "label": 33
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06952.jpg",
+    "label": 33
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06959.jpg",
+    "label": 33
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06966.jpg",
+    "label": 33
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06973.jpg",
+    "label": 34
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06980.jpg",
+    "label": 34
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06987.jpg",
+    "label": 34
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_06994.jpg",
+    "label": 34
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07001.jpg",
+    "label": 34
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07008.jpg",
+    "label": 38
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07015.jpg",
+    "label": 38
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07022.jpg",
+    "label": 38
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07029.jpg",
+    "label": 38
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07036.jpg",
+    "label": 38
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07043.jpg",
+    "label": 38
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07050.jpg",
+    "label": 66
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07057.jpg",
+    "label": 66
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07064.jpg",
+    "label": 66
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07071.jpg",
+    "label": 66
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07078.jpg",
+    "label": 66
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07085.jpg",
+    "label": 66
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07092.jpg",
+    "label": 9
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07099.jpg",
+    "label": 9
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07106.jpg",
+    "label": 9
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07113.jpg",
+    "label": 9
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07120.jpg",
+    "label": 9
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07127.jpg",
+    "label": 44
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07134.jpg",
+    "label": 44
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07141.jpg",
+    "label": 44
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07148.jpg",
+    "label": 44
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07155.jpg",
+    "label": 44
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07162.jpg",
+    "label": 5
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07169.jpg",
+    "label": 5
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07176.jpg",
+    "label": 5
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07183.jpg",
+    "label": 5
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07190.jpg",
+    "label": 5
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07197.jpg",
+    "label": 5
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07204.jpg",
+    "label": 6
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07211.jpg",
+    "label": 6
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07218.jpg",
+    "label": 6
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07225.jpg",
+    "label": 6
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07232.jpg",
+    "label": 6
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07239.jpg",
+    "label": 56
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07246.jpg",
+    "label": 56
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07253.jpg",
+    "label": 56
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07260.jpg",
+    "label": 56
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07267.jpg",
+    "label": 56
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07274.jpg",
+    "label": 61
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07281.jpg",
+    "label": 61
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07288.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07295.jpg",
+    "label": 36
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07302.jpg",
+    "label": 92
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07309.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07316.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07323.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07330.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07337.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07344.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07351.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07358.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07365.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07372.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07379.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07386.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07393.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07400.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07407.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07414.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07421.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07428.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07435.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07442.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07449.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07456.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07463.jpg",
+    "label": 93
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07470.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07477.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07484.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07491.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07498.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07505.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07512.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07519.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07526.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07533.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07540.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07547.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07554.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07561.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07568.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07575.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07582.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07589.jpg",
+    "label": 94
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07596.jpg",
+    "label": 95
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07603.jpg",
+    "label": 95
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07610.jpg",
+    "label": 95
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07617.jpg",
+    "label": 95
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07624.jpg",
+    "label": 95
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07631.jpg",
+    "label": 95
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07638.jpg",
+    "label": 95
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07645.jpg",
+    "label": 95
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07652.jpg",
+    "label": 95
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07659.jpg",
+    "label": 95
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07666.jpg",
+    "label": 95
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07673.jpg",
+    "label": 95
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07680.jpg",
+    "label": 95
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07687.jpg",
+    "label": 96
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07694.jpg",
+    "label": 96
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07701.jpg",
+    "label": 96
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07708.jpg",
+    "label": 96
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07715.jpg",
+    "label": 96
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07722.jpg",
+    "label": 96
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07729.jpg",
+    "label": 96
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07736.jpg",
+    "label": 96
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07743.jpg",
+    "label": 96
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07750.jpg",
+    "label": 96
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07757.jpg",
+    "label": 97
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07764.jpg",
+    "label": 97
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07771.jpg",
+    "label": 97
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07778.jpg",
+    "label": 97
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07785.jpg",
+    "label": 97
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07792.jpg",
+    "label": 97
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07799.jpg",
+    "label": 97
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07806.jpg",
+    "label": 97
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07813.jpg",
+    "label": 97
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07820.jpg",
+    "label": 97
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07827.jpg",
+    "label": 97
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07834.jpg",
+    "label": 98
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07841.jpg",
+    "label": 98
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07848.jpg",
+    "label": 98
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07855.jpg",
+    "label": 98
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07862.jpg",
+    "label": 98
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07869.jpg",
+    "label": 98
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07876.jpg",
+    "label": 98
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07883.jpg",
+    "label": 98
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07890.jpg",
+    "label": 98
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07897.jpg",
+    "label": 99
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07904.jpg",
+    "label": 99
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07911.jpg",
+    "label": 99
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07918.jpg",
+    "label": 99
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07925.jpg",
+    "label": 99
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07932.jpg",
+    "label": 99
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07939.jpg",
+    "label": 99
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07946.jpg",
+    "label": 100
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07953.jpg",
+    "label": 100
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07960.jpg",
+    "label": 100
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07967.jpg",
+    "label": 100
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07974.jpg",
+    "label": 100
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07981.jpg",
+    "label": 100
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07988.jpg",
+    "label": 100
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_07995.jpg",
+    "label": 100
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08002.jpg",
+    "label": 101
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08009.jpg",
+    "label": 101
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08016.jpg",
+    "label": 101
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08023.jpg",
+    "label": 101
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08030.jpg",
+    "label": 101
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08037.jpg",
+    "label": 101
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08044.jpg",
+    "label": 101
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08051.jpg",
+    "label": 23
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08058.jpg",
+    "label": 90
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08065.jpg",
+    "label": 30
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08072.jpg",
+    "label": 30
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08079.jpg",
+    "label": 66
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08086.jpg",
+    "label": 34
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08093.jpg",
+    "label": 9
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08100.jpg",
+    "label": 6
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08107.jpg",
+    "label": 5
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08114.jpg",
+    "label": 92
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08121.jpg",
+    "label": 56
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08128.jpg",
+    "label": 56
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08135.jpg",
+    "label": 56
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08142.jpg",
+    "label": 56
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08149.jpg",
+    "label": 56
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08156.jpg",
+    "label": 61
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08163.jpg",
+    "label": 61
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08170.jpg",
+    "label": 61
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08177.jpg",
+    "label": 61
+  },
+  {
+    "img_path": "C:\\Machine Learning\\Datasets\\flowers_102\\data\\image_08184.jpg",
+    "label": 61
+  }
+]
