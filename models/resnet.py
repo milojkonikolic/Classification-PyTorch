@@ -93,15 +93,16 @@ class ResNet(nn.Module):
 
     def forward(self, x):
         x = F.relu(self.bn1(self.conv1(x)))
-        #x = F.max_pool2d(x, 3, 2)
+        x = F.max_pool2d(x, 3, 2)
         x = self.block2(x)
         x = self.block3(x)
         x = self.block4(x)
         x = self.block5(x)
-        x = F.avg_pool2d(x, 2)
+        x = F.avg_pool2d(x, 4)
         x = x.reshape(x.shape[0], -1)
         # x = x.view(x.size()[0], -1)
-        x = F.log_softmax(self.fc1(x), dim=1)
+        x = self.fc1(x)
+        x = F.log_softmax(x, dim=1)
         return x
 
 
@@ -115,7 +116,7 @@ class ResNet18(ResNet):
         self.block3 = self.get_block(in_channel=64, out_channels=[128, 128], stride=2, num_blocks=2)
         self.block4 = self.get_block(in_channel=128, out_channels=[256, 256], stride=2, num_blocks=2)
         self.block5 = self.get_block(in_channel=256, out_channels=[512, 512], stride=2, num_blocks=2)
-        self.fc1 = nn.Linear(input_shape[0] // (2 ** 5) * input_shape[1] // (2 ** 5) * 512, num_classes)
+        self.fc1 = nn.Linear((input_shape[0] // (2 ** 7)) * (input_shape[1] // (2 ** 7)) * 512, num_classes)
 
 
 class ResNet34(ResNet):
@@ -128,7 +129,7 @@ class ResNet34(ResNet):
         self.block3 = self.get_block(in_channel=64, out_channels=[128, 128], stride=2, num_blocks=4)
         self.block4 = self.get_block(in_channel=128, out_channels=[256, 256], stride=2, num_blocks=6)
         self.block5 = self.get_block(in_channel=256, out_channels=[512, 512], stride=2, num_blocks=4)
-        self.fc1 = nn.Linear(input_shape[0] // (2 ** 5) * input_shape[1] // (2 ** 5) * 512, num_classes)
+        self.fc1 = nn.Linear((input_shape[0] // (2 ** 7)) * (input_shape[1] // (2 ** 7)) * 512, num_classes)
 
 
 class ResNet50(ResNet):
@@ -140,7 +141,7 @@ class ResNet50(ResNet):
         self.block3 = self.get_block(in_channel=256, out_channels=[128, 128, 512], stride=2, num_blocks=4)
         self.block4 = self.get_block(in_channel=512, out_channels=[256, 256, 1024], stride=2, num_blocks=6)
         self.block5 = self.get_block(in_channel=1024, out_channels=[512, 512, 2048], stride=2, num_blocks=3)
-        self.fc1 = nn.Linear(input_shape[0] // (2 ** 5) * input_shape[1] // (2 ** 5) * 2048, num_classes)
+        self.fc1 = nn.Linear((input_shape[0] // (2 ** 7)) * (input_shape[1] // (2 ** 7)) * 2048, num_classes)
 
 
 class ResNet101(ResNet):
@@ -152,7 +153,7 @@ class ResNet101(ResNet):
         self.block3 = self.get_block(in_channel=256, out_channels=[128, 128, 512], stride=2, num_blocks=4)
         self.block4 = self.get_block(in_channel=512, out_channels=[256, 256, 1024], stride=2, num_blocks=23)
         self.block5 = self.get_block(in_channel=1024, out_channels=[512, 512, 2048], stride=2, num_blocks=3)
-        self.fc1 = nn.Linear(input_shape[0] // (2 ** 5) * input_shape[1] // (2 ** 5) * 2048, num_classes)
+        self.fc1 = nn.Linear((input_shape[0] // (2 ** 7)) * (input_shape[1] // (2 ** 7)) * 2048, num_classes)
 
 
 class ResNet152(ResNet):
@@ -164,11 +165,11 @@ class ResNet152(ResNet):
         self.block3 = self.get_block(in_channel=256, out_channels=[128, 128, 512], stride=2, num_blocks=8)
         self.block4 = self.get_block(in_channel=512, out_channels=[256, 256, 1024], stride=2, num_blocks=36)
         self.block5 = self.get_block(in_channel=1024, out_channels=[512, 512, 2048], stride=2, num_blocks=3)
-        self.fc1 = nn.Linear(input_shape[0] // (2 ** 5) * input_shape[1] // (2 ** 5) * 2048, num_classes)
+        self.fc1 = nn.Linear((input_shape[0] // (2 ** 7)) * (input_shape[1] // (2 ** 7)) * 2048, num_classes)
 
 
 if __name__ == "__main__":
 
     # Test
-    net = ResNet18(num_classes=2, input_shape=(224, 224))(torch.randn(16, 3, 224, 224))
+    net = ResNet152(num_classes=2, input_shape=(180, 180))(torch.randn(16, 3, 180, 180))
     print("net.shape: ", net.shape)

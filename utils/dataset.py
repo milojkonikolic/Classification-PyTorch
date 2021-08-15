@@ -60,15 +60,16 @@ class RandomBrightness(object):
         self.high_value = high_value
 
     def __call__(self, img):
-        value = random.uniform(self.low_value, self.high_value)
-        hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
-        hsv = np.array(hsv, dtype=np.float64)
-        hsv[:, :, 1] = hsv[:, :, 1] * value
-        hsv[:, :, 1][hsv[:, :, 1] > 255] = 255
-        hsv[:, :, 2] = hsv[:, :, 2] * value
-        hsv[:, :, 2][hsv[:, :, 2] > 255] = 255
-        hsv = np.array(hsv, dtype=np.uint8)
-        img = cv.cvtColor(hsv, cv.COLOR_HSV2BGR)
+        if random.random() < self.p:
+            value = random.uniform(self.low_value, self.high_value)
+            hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
+            hsv = np.array(hsv, dtype=np.float64)
+            hsv[:, :, 1] = hsv[:, :, 1] * value
+            hsv[:, :, 1][hsv[:, :, 1] > 255] = 255
+            hsv[:, :, 2] = hsv[:, :, 2] * value
+            hsv[:, :, 2][hsv[:, :, 2] > 255] = 255
+            hsv = np.array(hsv, dtype=np.uint8)
+            img = cv.cvtColor(hsv, cv.COLOR_HSV2BGR)
         return img
 
 
@@ -89,13 +90,10 @@ class DatasetBuilder(Dataset):
         img_path = label["img_path"]
         class_id = label["label"]
         img = self.read_img(img_path)
-        #print("img: ", img)
-        #print("img.shape1: ", img.shape)
         if self.augment:
             img = self.augment_img(img)
         img = self.preprocess_img(img, img_path)
-        #print("img.shape2: ", img.shape)
-        return (img, class_id)
+        return img, class_id
 
     def load_labels(self, logger):
         with open(self.data_path, 'r') as f:
@@ -106,7 +104,6 @@ class DatasetBuilder(Dataset):
     def read_img(self, img_path):
         try:
             img = cv.imread(img_path)
-            img = cv.cvtColor(img, cv.COLOR_RGB2BGR)
         except:
             img = 0
             print(f"Cannot read image : {img_path}")
@@ -129,6 +126,7 @@ class DatasetBuilder(Dataset):
 
     def preprocess_img(self, img, img_path):
         try:
+            img = cv.cvtColor(img, cv.COLOR_RGB2BGR)
             img = cv.resize(img, self.img_size)
             img = np.transpose(img, (2, 0, 1))
             img = img / 255.
