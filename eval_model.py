@@ -1,16 +1,15 @@
 import os
-import json
 import argparse
 import yaml
-import random
-import cv2 as cv
 import torch
 from tqdm import tqdm
 
-from utils.utils import load_model, preprocess_img, get_device
+from utils.dataset import DatasetBuilder
+from utils.utils import get_device, get_logger
+from models.common import load_model
 
 
-def evaluate(model, data, device):
+def evaluate(model, dataset, device):
     """ Get predictions from model and calculate accuracy
     Args:
         model: PyTorch Model
@@ -21,19 +20,14 @@ def evaluate(model, data, device):
     """
 
     correct = 0
-    for num in tqdm(range(len(data))):
-        d = data[num]
-        img_path = d["img_path"]
-        label = d["label"]
-        img = cv.imread(img_path)
-        img = preprocess_img(img)
+    for num in tqdm(range(len(dataset))):
+        img, label = dataset[num]
         img = img.cuda(device)
         pred = model(img)
         predicted = int(torch.max(pred.data, 1)[1])
-
         if predicted == label:
             correct += 1
-    acc = correct / len(data)
+    acc = correct / len(dataset)
     print(f"Accuracy: {acc}")
 
 
@@ -56,18 +50,15 @@ if __name__ == "__main__":
     else:
         raise ValueError(f"Path {args.config} not found")
 
+    logger = get_logger()
     device = get_device(args.device)
-    model = load_model(args.model, arch=config["Train"]["arch"],
-                       num_classes=config["Dataset"]["num_classes"],
-                       input_shape=config["Train"]["image_size"],
-                       channels=config["Train"]["channels"]
-                       ).cuda(device)
+    model = load_model(arch=config["Train"]["arch"], num_classes=config["Dataset"]["num_classes"],
+                       input_shape=config["Train"]["image_size"], device=device, model_path=args.model,
+                       channels=config["Train"]["channels"], logger=logger)
 
     if os.path.isfile(args.dataset):
-        with open(args.dataset, 'r') as data_file:
-            data = json.load(data_file)
+        dataset = DatasetBuilder(args.dataset, config["Dataset"]["classes_path"], config["Train"]["image_size"], logger)
     else:
         raise ValueError(f"Path {args.dataset} not found")
 
-    random.shuffle(data)
-    evaluate(model, data, device)
+    evaluate(model, dataset, device)

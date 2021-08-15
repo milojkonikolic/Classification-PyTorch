@@ -1,4 +1,3 @@
-import os
 import argparse
 import yaml
 import numpy as np
@@ -6,17 +5,16 @@ import torch
 import torch.nn as nn
 
 from utils.utils import get_device, get_logger, get_tb_writer, copy_config
+from models.common import load_model, save_model
 from utils.lr_schedulers import StepDecayLR
 from utils.dataset import create_dataloaders
-from models.CustomNet import CustomNet
-from models.resnet import ResNet18, ResNet34, ResNet50, ResNet101, ResNet152
 
 
 class Train():
 
     def __init__(self, config):
         self.logger = get_logger()
-        self.writer = get_tb_writer(config["Logging"]["tb_logdir"], config["Logging"]["ckpt_dir"])
+        self.writer = get_tb_writer(config["Logging"]["tb_logdir"])
         self.num_classes = config["Dataset"]["num_classes"]
         self.batch_size = config["Train"]["batch_size"]
         self.epochs = config["Train"]["epochs"]
@@ -25,7 +23,8 @@ class Train():
         self.ckpt_dir = config["Logging"]["ckpt_dir"]
         self.eval_per_epoch = config["Train"]["eval_per_epoch"]
         self.device = get_device(config["Train"]["device"])
-        self.model = self.load_model(config["Train"]["arch"], config["Train"]["pretrained"])
+        self.model = load_model(config["Train"]["arch"], self.num_classes, self.input_shape, self.device,
+                                config["Train"]["pretrained"], self.channels, self.logger)
         self.optimizer = self.get_optimizer(config["Train"]["optimizer"], config["Train"]["lr_scheduler"]["lr_init"])
         self.scheduler = self.get_scheduler(config["Train"]["lr_scheduler"])
         self.train_loader, self.val_loader, self.classes = \
@@ -37,6 +36,7 @@ class Train():
                                augment=config["Augmentation"],
                                logger=self.logger)
         self.criterion = nn.CrossEntropyLoss()
+        self.results = []
 
     def get_optimizer(self, opt, lr=0.001):
         """
@@ -66,52 +66,6 @@ class Train():
             return lr_scheduler
         else:
             return False
-
-    def get_model(self, arch):
-        """
-        Args:
-            arch: string, Network architecture
-        Returns:
-            model, nn.Module, generated model
-        """
-        if arch == "CustomNet":
-            model = CustomNet(self.num_classes, self.channels)
-        elif arch.lower() == "resnet18":
-            model = ResNet18(self.num_classes, self.input_shape, self.channels)
-        elif arch.lower() == "resnet34":
-            model = ResNet34(self.num_classes, self.input_shape, self.channels)
-        elif arch.lower() == "resnet50":
-            model = ResNet50(self.num_classes, self.input_shape, self.channels)
-        elif arch.lower() == "resnet101":
-            model = ResNet101(self.num_classes, self.input_shape, self.channels)
-        elif arch.lower() == "resnet152":
-            model = ResNet152(self.num_classes, self.input_shape, self.channels)
-        else:
-            raise NotImplementedError(f"{arch} not implemented."
-                                      f"For supported architectures see documentation")
-        return model
-
-    def load_model(self, arch, pretrained=''):
-
-        model = self.get_model(arch)
-        if pretrained:
-            self.logger.info(f"Loading weights from {pretrained}...")
-            model.load_state_dict(torch.load(pretrained))
-            model.eval()
-
-        return model.cuda(self.device)
-
-    def save_model(self, step):
-        """ Save model
-        Args:
-            step: Number of steps
-        """
-        ckpt_dir = os.path.join(self.ckpt_dir, "checkpoints")
-        if not os.path.isdir(ckpt_dir):
-            os.makedirs(ckpt_dir)
-        ckpt_path = os.path.join(ckpt_dir, "model_step_" + str(step) + ".pt")
-        torch.save(self.model.state_dict(), ckpt_path)
-        self.logger.info(f"Model saved: {ckpt_path}")
 
     def train(self):
 
@@ -173,7 +127,9 @@ class Train():
                         self.logger.info(f"val_accuracy: {acc}%")
                         self.writer.add_scalar("val_accuracy", acc, global_step)
                         results.append({"epoch": epoch, "val_accuracy": acc})
-                        self.save_model(global_step)
+                        batches = batch * self.batch_size
+                        self.results.append({"val_accuracy": acc, "epoch": epoch, "batches": batches})
+                        save_model(self.model, epoch, batches, self.ckpt_dir, self.results, self.logger)
 
         self.logger.info(f"---------------- Training Finished ----------------")
 

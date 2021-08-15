@@ -1,19 +1,19 @@
 Dataset:
-  train_data_path: "C://Machine Learning//Datasets//flowers_102//train_data.json"
-  val_data_path: "C://Machine Learning//Datasets//flowers_102//val_data.json"
-  classes_path: "C://Machine Learning//Datasets//flowers_102//class_inds.txt"
-  num_classes: 102
+  train_data_path: "C://Machine Learning//Datasets//flowers//train_data.json"
+  val_data_path: "C://Machine Learning//Datasets//flowers//val_data.json"
+  classes_path: "C://Machine Learning//Datasets//flowers//classes.txt"
+  num_classes: 5
 Train:
   lr_scheduler:
     lr_init: 0.01
-    lr_end: 0.0001
+    lr_end: 0.001
     StepDecay:
       use: True
       epoch_steps: [1, 3, 5]
-  batch_size: 1
+  batch_size: 8
   epochs: 20
   eval_per_epoch: 3
-  image_size: [416, 416]  # divisible by 32
+  image_size: [320, 320]  # divisible by 32
   channels: 3
   optimizer: "adam"
   arch: "ResNet34"
@@ -28,10 +28,10 @@ Augmentation:
     p: 0.25
     angle: 30
   RandomBrightness:
-    p: 0.2
+    p: 0.0
     low_value: 0.5
     high_value: 4.0
 
 Logging:
-  tb_logdir: "C:\\Machine Learning\\Classification Networks PyTorch\\logs\\flowers_102"
-  ckpt_dir: "C:\\Machine Learning\\Classification Networks PyTorch\\checkpoints\\flowers_102\\ResNet34_1"
+  tb_logdir: "C://Machine Learning//Classification Networks PyTorch//logs//flowers//ResNet34"
+  ckpt_dir: "C://Machine Learning//Classification Networks PyTorch//checkpoints//flowers//ResNet34"
