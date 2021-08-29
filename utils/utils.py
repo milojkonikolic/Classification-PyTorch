@@ -26,6 +26,8 @@ def get_tb_writer(tb_logdir):
     Return:
         writer: TensorBoard writer
     """
+    if not os.path.isdir(tb_logdir):
+        os.makedirs(tb_logdir)
     writer = SummaryWriter(log_dir=tb_logdir)
     return writer
 

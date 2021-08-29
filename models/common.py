@@ -5,6 +5,7 @@ import torch
 
 from models.CustomNet import CustomNet
 from models.resnet import ResNet18, ResNet34, ResNet50, ResNet101, ResNet152
+from models.mobilenets import MobileNetV1, MobileNetV2
 
 
 def get_model(arch, num_classes, input_shape, channels=3):
@@ -29,8 +30,12 @@ def get_model(arch, num_classes, input_shape, channels=3):
         model = ResNet101(num_classes, input_shape, channels)
     elif arch.lower() == "resnet152":
         model = ResNet152(num_classes, input_shape, channels)
+    elif arch.lower() == "mobilenet_v1":
+        model = MobileNetV1(num_classes, channels)
+    elif arch.lower() == "mobilenet_v2":
+        model = MobileNetV2(num_classes, channels)
     else:
-        raise NotImplementedError(f"{arch} not implemented."
+        raise NotImplementedError(f"{arch} not implemented. "
                                   f"For supported architectures see documentation")
     return model
 
