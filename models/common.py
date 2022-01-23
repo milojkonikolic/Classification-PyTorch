@@ -3,7 +3,6 @@ import glob
 from shutil import copyfile
 import torch
 
-from models.CustomNet import CustomNet
 from models.resnet import ResNet18, ResNet34, ResNet50, ResNet101, ResNet152
 from models.mobilenets import MobileNetV1, MobileNetV2
 
@@ -17,9 +16,7 @@ def get_model(arch, num_classes, channels=3):
     Returns:
         model, nn.Module, generated model
     """
-    if arch == "CustomNet":
-        model = CustomNet(channels, num_classes)
-    elif arch.lower() == "resnet18":
+    if arch.lower() == "resnet18":
         model = ResNet18(channels, num_classes)
     elif arch.lower() == "resnet34":
         model = ResNet34(channels, num_classes)
