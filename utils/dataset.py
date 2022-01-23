@@ -5,6 +5,7 @@ import random
 import imutils
 import torch
 from torch.utils.data import Dataset, DataLoader
+from torch.nn.functional import one_hot
 
 
 class RandomCrop(object):
@@ -80,6 +81,7 @@ class DatasetBuilder(Dataset):
         self.labels = self.load_labels(logger)
         self.img_size = tuple(img_size)
         self.classes = self.get_classes(classes_path)
+        self.num_classes = len(self.classes)
         self.augment = augment
 
     def __len__(self):
@@ -88,7 +90,8 @@ class DatasetBuilder(Dataset):
     def __getitem__(self, item):
         label = self.labels[item]
         img_path = label["img_path"]
-        class_id = label["label"]
+        class_id = torch.tensor(label["label"])
+        # class_one_hot = one_hot(class_id, self.num_classes)
         img = self.read_img(img_path)
         if self.augment:
             img = self.augment_img(img)
@@ -125,19 +128,26 @@ class DatasetBuilder(Dataset):
         return img
 
     def preprocess_img(self, img, img_path):
-        try:
-            img = cv.cvtColor(img, cv.COLOR_RGB2BGR)
-            img = cv.resize(img, self.img_size)
-            img = np.transpose(img, (2, 0, 1))
-            img = img / 255.
-        except:
-            print(img_path)
+        img = cv.cvtColor(img, cv.COLOR_RGB2BGR)
+        org_height, org_width, _ = img.shape
+        # Pad image if dimensions of the image are smaller than provided image size
+        if org_height < self.img_size[1] and org_width < self.img_size[0]:
+            pad_val = [(int((self.img_size[1] - org_height) / 2.),
+                        int((self.img_size[1] - org_height) / 2.)),
+                       (int((self.img_size[0] - org_width) / 2.),
+                        int((self.img_size[0] - org_width) / 2.)),
+                       (0, 0)]
+            img = np.pad(img, pad_val)
+        img = cv.resize(img, self.img_size)
+        img = np.transpose(img, (2, 0, 1))
+        img = img / 255.
         return torch.FloatTensor(img)
 
     @staticmethod
     def get_classes(classes_path):
         with open(classes_path, 'r') as f:
             classes = f.read().split('\n')
+        classes = [cl for cl in classes if cl]
         return classes
 
 

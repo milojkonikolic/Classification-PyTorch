@@ -23,7 +23,7 @@ class Train():
         self.ckpt_dir = config["Logging"]["ckpt_dir"]
         self.eval_per_epoch = config["Train"]["eval_per_epoch"]
         self.device = get_device(config["Train"]["device"])
-        self.model = load_model(config["Train"]["arch"], self.num_classes, self.input_shape, self.device,
+        self.model = load_model(config["Train"]["arch"], self.num_classes, self.device,
                                 config["Train"]["pretrained"], self.channels, self.logger)
         self.optimizer = self.get_optimizer(config["Train"]["optimizer"], config["Train"]["lr_scheduler"]["lr_init"])
         self.scheduler = self.get_scheduler(config["Train"]["lr_scheduler"])
@@ -72,7 +72,7 @@ class Train():
         total_num_params = 0
         for p in params:
             total_num_params += p
-        self.logger.info(f"Number of parameters: {total_num_params}")
+        self.logger.info(f"Number of parameters of the model: {total_num_params}")
 
         global_step = 0
         eval_steps = list(np.linspace(len(self.train_loader) // self.eval_per_epoch, len(self.train_loader),
@@ -91,7 +91,7 @@ class Train():
                 y_pred = self.model(X_train)
                 train_loss = self.criterion(y_pred, y_train)
 
-                global_step += self.batch_size
+                global_step += 1
 
                 self.optimizer.zero_grad()
                 train_loss.backward()
@@ -132,6 +132,7 @@ class Train():
 
         self.logger.info(f"---------------- Training Finished ----------------")
 
+
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
@@ -142,7 +143,6 @@ if __name__ == "__main__":
     # Get parameters from the config file
     with open(args.config, 'r') as cfg_file:
         config = yaml.load(cfg_file, Loader=yaml.FullLoader)
-
     copy_config(config)
 
     Trainer = Train(config)

@@ -48,7 +48,6 @@ class MobileNetV1(nn.Module):
         x = F.avg_pool2d(x, x.shape[2])
         x = x.reshape(x.shape[0], -1)
         x = self.fc(x)
-        x = F.log_softmax(x, dim=1)
         return x
 
 

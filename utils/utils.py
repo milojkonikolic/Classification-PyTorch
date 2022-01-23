@@ -56,9 +56,9 @@ def copy_config(config):
     Args:
     config: Config file
     """
-    ckpt_dir = config["Logging"]["ckpt_dir"]
-    if not os.path.isdir(ckpt_dir):
-        os.makedirs(ckpt_dir)
-    out_config_path = os.path.join(ckpt_dir, "config.yaml")
+    train_dir = os.path.dirname(config["Logging"]["ckpt_dir"])
+    if not os.path.isdir(train_dir):
+        os.makedirs(train_dir)
+    out_config_path = os.path.join(train_dir, "config.yaml")
     with open(out_config_path, 'w') as outfile:
         yaml.dump(config, outfile)
