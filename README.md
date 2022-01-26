@@ -103,8 +103,6 @@ Train dataset is split into train and validation datasets where 45000 images are
 Network that is used is resnet34. Accuracy on validation dataset is 98% which means that network will 
 correctly classify 98 out of 100 images from validation dataset.
 
-After training the model is run on test dataset. Accuracy that is obtained on test set is 
-
 Screenshots of the tensorboard with learning rate, loss on the train dataset and loss and accuracy on the 
 validation dataset for this training are displayed below. 
 
