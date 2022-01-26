@@ -74,3 +74,52 @@ During one epoch ```eval_per_epoch``` checkpoints will be saved where ```eval_pe
 the config.
 
 ## Results
+
+### CIFAR-10 Dataset
+
+CIFAR-10 dataset consists of 60000 images where 50000 images are in train and 10000 images are in test 
+part). Number of classes is 10 where classes are:
+```
+airplane
+automobile
+bird
+cat
+deer
+dog
+frog
+horse
+ship
+truck
+```
+Several images from dataset are displayed below.
+
+![Data sample](./data/cifar_sample.jpg)
+
+More details about dataset can be found [here](https://www.cs.toronto.edu/~kriz/cifar.html).
+
+Train dataset is split into train and validation datasets where 45000 images are chosen for train and 
+5000 images are chosen for validation dataset.
+
+Network that is used is resnet34. Accuracy on validation dataset is 98% which means that network will 
+correctly classify 98 out of 100 images from validation dataset.
+
+After training the model is run on test dataset. Accuracy that is obtained on test set is 
+
+Screenshots of the tensorboard with learning rate, loss on the train dataset and loss and accuracy on the 
+validation dataset for this training are displayed below. 
+
+![](./data/lr.png)
+*Learning rate*
+
+![](./data/train_loss.png)
+*Train Loss*
+
+![Val loss](./data/val_loss.png)
+*Val Loss*
+
+![Val accuracy](./data/val_accuracy.png)
+*Val accuracy*
+
+Training is run for 14 epochs with batch size = 64. Optimizer that is used is adam. Size of the input image 
+to the model is 128x128. Size of the images in the dataset is 32x32. In order to train model with input size 
+128x128 each image is padded from 32x32 to 128x128.
