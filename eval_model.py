@@ -53,8 +53,8 @@ if __name__ == "__main__":
     logger = get_logger()
     device = get_device(args.device)
     model = load_model(arch=config["Train"]["arch"], num_classes=config["Dataset"]["num_classes"],
-                       input_shape=config["Train"]["image_size"], device=device, model_path=args.model,
-                       channels=config["Train"]["channels"], logger=logger)
+                       device=device, model_path=args.model, channels=config["Train"]["channels"],
+                       logger=logger)
 
     if os.path.isfile(args.dataset):
         dataset = DatasetBuilder(args.dataset, config["Dataset"]["classes_path"], config["Train"]["image_size"], logger)
